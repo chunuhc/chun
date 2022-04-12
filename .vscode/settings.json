@@ -1,0 +1,14 @@
+{
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",// 未壓縮的css，預設
+            "extensionName": ".css",// css檔名結尾
+            "savePath": "./css",
+        }
+    ],
+}

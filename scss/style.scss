@@ -1,0 +1,128 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+@import "print";
+
+
+body {
+    background-color: rgb(223, 218, 211);
+}
+
+.header {
+    background-color: #E5CDA9;
+    color: #fff;
+    width: 100%;
+    top: 0;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.navbar li {
+    margin-left: 8px;
+}
+
+ul.navbar li a {
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 1em;
+}
+
+.bannerBlock {
+    width: 100%;
+    height: 385px;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    margin-top: 40px;
+
+    /* swiper */
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+        
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            img {
+                display: block;
+                /* width: 100%;
+                height: 100%; */
+                max-width: 720px;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 10em;
+    background-color: #E5CDA9;
+    border-radius: 50px 50px 0 0;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+}

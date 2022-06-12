@@ -203,10 +203,10 @@ ul.navBar {
     bottom: 0;
     font-size: 20px;
     display: flex;
+    flex-wrap: wrap;
     color: $main03;
     align-items: center;
     justify-content: space-around;
-    padding: 40px;
     .email, .phone {
         display: flex;
     }

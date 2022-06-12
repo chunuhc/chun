@@ -8265,10 +8265,10 @@ ul.navBar li a.active::after {
   bottom: 0;
   font-size: 20px;
   display: flex;
+  flex-wrap: wrap;
   color: #8C6833;
   align-items: center;
   justify-content: space-around;
-  padding: 40px;
 }
 
 .footer .email, .footer .phone {

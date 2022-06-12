@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>CHUN CHEN ｜ WEB-UI</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="webUi">
+    <div class="container-fulid header">
+        <div class="web-title">CHUN CHEN ｜ WEB-UI</div>
+        <ul class="navBar">
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="javascript:;">ABOUT</a>
+            </li>
+            <li>
+                <a class="active" href="webui.html">WEB UI</a>
+            </li>
+            <li>
+                <a href="javascript:;">BANNER</a>
+            </li>
+        </ul>
+        <div class="header-bgc">
+        </div>
+    </div>
+    <div class="container edmBlock">
+        <div class="d-flex flex-wrap w-100">
+            
+            <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
+                <img src="img/edm01.png" alt="" style="max-width: 200px;">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
+                <img src="img/edm02.png" alt="" style="max-width: 200px;">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
+                <img src="img/edm01.png" alt="" style="max-width: 200px;">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
+                <img src="img/edm02.png" alt="" style="max-width: 200px;">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
+                <img src="img/edm01.png" alt="" style="max-width: 200px;">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
+                <img src="img/edm02.png" alt="" style="max-width: 200px;">
+            </a>
+            
+
+        </div>
+    </div>
+    <div class="container-fulid footer">
+
+    </div>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var swiper = new Swiper(".swiper-container", {
+                cssMode: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+
+                observer: true, //修改swiper自己或子元素时，自动初始化swiper
+                observeParents: true, //修改swiper的父元素时，自动初始化swiper
+            });
+
+        })
+    </script>
+    <!-- swiper -->
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+</body>
+</html>

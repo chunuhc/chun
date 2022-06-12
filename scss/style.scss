@@ -47,45 +47,71 @@ body {
 }
 
 .header {
-    background-color: #E5CDA9;
+    background-color: $main01;
     color: #fff;
     width: 100%;
     top: 0;
     display: flex;
-    padding: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+    .web-title {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 40px 40px 90px;
+    }
+    .header-bgc {
+        background-color: $main02;
+        height: 24px;
+        width: 100%;
+        position: absolute;
+        bottom: 24px;
+    }
 }
 
-ul.navbar {
+ul.navBar {
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
+    padding: 40px 40px 90px;
+    li {
+        margin-left: 8px;
+        a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 1em;
+            position: relative;
+            &.active::after {
+                content: "";
+                background-color: #fff;
+                width: 16px;
+                height: 4px;
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
 }
 
-ul.navbar li {
-    margin-left: 8px;
-}
-
-ul.navbar li a {
-    color: #fff;
-    font-weight: 900;
-    text-decoration: none;
-    border-radius: 1em;
-}
 
 .bannerBlock {
     width: 100%;
-    height: 385px;
+    // height: 385px;
     border-radius: 10px;
     background-color: #EDEDED;
-    margin-top: 40px;
+    // margin-top: -12px;
+    margin-top: 24px;
 
     /* swiper */
     .swiper-container {
         width: 100%;
-        height: 100%;
+        height: auto;
+        border-radius: 1em;
         .swiper-slide {
             text-align: center;
             font-size: 18px;
@@ -108,10 +134,57 @@ ul.navbar li a {
                 display: block;
                 /* width: 100%;
                 height: 100%; */
-                max-width: 720px;
+                // max-width: 720px;
                 width: 100%;
                 height: auto;
-                object-fit: cover;
+                object-fit: scale-down;
+            }
+        }
+        .swiper-button-next::after {
+            content: "\f105";
+            font-family: "Font awesome 5 free";
+            font-weight: 900;
+            color: $main01;
+        }
+        .swiper-button-prev::after {
+            content: "\f104";
+            font-family: "Font awesome 5 free";
+            font-weight: 900;
+            color: $main01;
+        }
+        span.swiper-pagination-bullet-active {
+            background-color: $main01;
+        }
+    }
+}
+
+.block1 {
+    .pointItem {
+        background-color: $main01;
+        // padding: 16px;
+        border-radius: 10px;
+        .pic {
+            height: 180px;
+            width: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+        }
+        .picTitle {
+            background-color: $main02;
+            border-radius: 0 0 10px 10px;
+            text-align: left;
+            padding: 8px;
+            font-size: 20px;
+            color: $main03;
+            .picContent {
+                color: $main03;
+                font-size: 16px;
             }
         }
     }
@@ -120,9 +193,35 @@ ul.navbar li a {
 .footer {
     width: 100%;
     height: 10em;
-    background-color: #E5CDA9;
+    background-color: $main01;
     border-radius: 50px 50px 0 0;
     margin-top: 40px;
-    position: absolute;
+    // position: absolute;
+    position: inherit;
     bottom: 0;
+    font-size: 20px;
+    display: flex;
+    color: $main03;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    .email, .phone {
+        display: flex;
+    }
+    .foot-title {
+
+    }
+    .foot-content {
+        margin-left: 1rem;
+    }
+}
+
+#webUi {
+    .edmBlock {
+        margin-top: 24px;
+        > div > a {
+            // max-width: 100%;
+            margin: 1em;
+        }
+    }
 }

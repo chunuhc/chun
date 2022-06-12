@@ -9,38 +9,50 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- fontawesome's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://chunuhhc.github.io/chun/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+<!-- js load #header #footer  -->
 <body>
     <div class="container-fulid header">
-        <h4>CHUN CHEN ｜ PORFOLIO</h4>
-        <ul class="navbar">
+        <div class="web-title">CHUN CHEN ｜ PORFOLIO</div>
+        <ul class="navBar">
             <li>
-                <a href="javascript:;">HOME</a>
+                <a class="active" href="index.html">HOME</a>
             </li>
             <li>
                 <a href="javascript:;">ABOUT</a>
             </li>
             <li>
-                <a href="javascript:;">WEB UI</a>
+                <a href="webui.html">WEB UI</a>
             </li>
             <li>
                 <a href="javascript:;">BANNER</a>
             </li>
+            <li>
+                <a href="javascript:;">LOGO DESIGN</a>
+            </li>
         </ul>
+        <div class="header-bgc">
+        </div>
     </div>
     <div class="container">
+
         <div class="bannerBlock">
 
             <!-- Swiper -->
             <div class="swiper swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/02.webp" alt="">
+                    <img src="/img/banner01.webp" alt="">
                 </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">
+                    <img src="/img/banner02png" alt="">
+                </div>
+                <div class="swiper-slide">
+                </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -49,13 +61,62 @@
 
         </div>
         
+        <div class="block1 row my-5">
+            <div class="col-4 text-center">
+                <div class="pointItem">
+                    <div class="pic">
+                        <img src="./img/Artboard 1.png" alt="">
+                    </div>
+                    <div class="picTitle">
+                        lorem
+                        <div class="picContent">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="pointItem">
+                    <div class="pic">
+                        <img src="./img/01.jpg" alt="">
+                    </div>
+                    <div class="picTitle">
+                        lorem
+                        <div class="picContent">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="pointItem">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="picTitle">
+                        lorem
+                        <div class="picContent">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="container-fulid footer">
-
+        <div class="email">
+            <div class="foot-title">E-MAIL</div>
+            <div class="foot-content">SO8151@GMAIL.COM</div>
+        </div>
+        <div class="phone">
+            <div class="foot-title">PHONE</div>
+            <div class="foot-content">0988027903</div>
+        </div>
     </div>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         $(document).ready(function () {
 

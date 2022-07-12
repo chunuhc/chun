@@ -8277,6 +8277,7 @@ ul.navBar li a.active::after {
 
 .footer .email, .footer .phone {
   display: flex;
+  justify-content: center;
 }
 
 .footer .foot-content {

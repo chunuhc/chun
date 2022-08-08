@@ -1,3 +1,18 @@
+
+window.onload = function() {
+
+  var header = document.getElementById('header');
+  
+  axios.get('./header.html')
+  .then(function(res) {
+      // load('./header.html')
+      header.innerHTML = res.data;
+  })
+  // .catch(function(err) {
+  //     console.log(err);
+  // });
+}
+
 $(document).ready(function () {
 
   var swiper = new Swiper(".swiper-container", {

@@ -16,29 +16,33 @@
 </head>
 <!-- js load #header #footer  -->
 <body>
-    <div class="container-fulid header">
-        <div class="web-title">CHUN CHEN ｜ PORFOLIO</div>
-        <ul class="navBar testclass">
-            <li>
-                <a class="active" href="index.html">HOME</a>
-            </li>
-            <li>
-                <a href="javascript:;">ABOUT</a>
-            </li>
-            <li>
-                <a href="webui.html">WEB UI</a>
-            </li>
-            <li>
-                <a href="javascript:;">BANNER</a>
-            </li>
-            <li>
-                <a href="javascript:;">LOGO DESIGN</a>
-            </li>
-        </ul>
-        <div class="header-bgc">
+    <div id="header">
+
+    </div>
+    <div class="container block">
+        <div class="d-flex flex-wrap w-100">
+            
+            <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
+                <img src="img/logo01.jpg" alt="">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
+                <img src="img/logo02.jpg" alt="">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
+                <img src="img/dm01-1.jpg" alt="">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
+                <img src="img/dm01-2.jpg" alt="">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
+                <img src="img/edm01.png" alt="">
+            </a>
+            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
+                <img src="img/edm02.png" alt="">
+            </a>
         </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         
         <div class="block1 row my-5">
             <div class="col-12 col-md-4 text-center">
@@ -92,7 +96,7 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
     <div class="container-fulid footer">
         <div class="email col-12 col-md-6">
             <div class="foot-title">E-MAIL</div>
@@ -103,32 +107,39 @@
             <div class="foot-content">0988027903</div>
         </div>
     </div>
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script>
+
         $(document).ready(function () {
+            // $('.header').load('./header.html');
 
-            var swiper = new Swiper(".swiper-container", {
-                cssMode: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-                mousewheel: true,
-                keyboard: true,
+            // var swiper = new Swiper(".swiper-container", {
+            //     cssMode: true,
+            //     navigation: {
+            //         nextEl: ".swiper-button-next",
+            //         prevEl: ".swiper-button-prev",
+            //     },
+            //     pagination: {
+            //         el: ".swiper-pagination",
+            //     },
+            //     mousewheel: true,
+            //     keyboard: true,
 
-                observer: true, //修改swiper自己或子元素时，自动初始化swiper
-                observeParents: true, //修改swiper的父元素时，自动初始化swiper
-            });
+            //     observer: true, //修改swiper自己或子元素时，自动初始化swiper
+            //     observeParents: true, //修改swiper的父元素时，自动初始化swiper
+            // });
 
         })
     </script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <!-- swiper -->
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./js/main.js"></script>
     
 </body>
 </html>

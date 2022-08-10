@@ -8124,6 +8124,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   margin-right: auto;
+  text-align: center;
 }
 
 #header .header-bgc {
@@ -8135,10 +8136,15 @@ body {
 }
 
 #header .web {
-  display: flex;
   height: 128px;
   align-items: center;
-  transform: translateY(-24px);
+  transform: translateY(8px);
+}
+
+@media (min-width: 768px) {
+  #header .web {
+    transform: translateY(-24px);
+  }
 }
 
 #header .web > div {
@@ -8275,6 +8281,19 @@ ul.navBar li a.active::after {
 
 .block > a img {
   max-width: 100%;
+}
+
+.block > a .hover {
+  opacity: 0;
+}
+
+.block > a:hover .hover {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.7;
+  position: relative;
 }
 
 .inlineContent img {

@@ -8235,37 +8235,6 @@ ul.navBar li a.active::after {
   background-color: #E5CDA9;
 }
 
-.block1 .pointItem {
-  background-color: #E5CDA9;
-  border-radius: 8px;
-  column-count: 1;
-  column-gap: 18px;
-  justify-content: center;
-  display: flex;
-  flex-flow: column wrap;
-  height: 100vh;
-}
-
-.block1 .pic {
-  display: inline;
-  background: #fff;
-  break-inside: avoid;
-  overflow: hidden;
-  border-radius: 8px;
-  width: calc(100%/3 - 20px);
-}
-
-.block1 .pic img {
-  max-width: 100%;
-  border-radius: 8px;
-  width: 100%;
-  height: 100%;
-}
-
-.block1 div:not(:last-child) {
-  margin-bottom: 8px;
-}
-
 .footer {
   width: 100%;
   height: 10em;
@@ -8292,19 +8261,41 @@ ul.navBar li a.active::after {
 
 .block {
   margin-top: 24px;
+  column-gap: 1em;
+  column-width: 240px;
 }
 
-.block > div > a {
-  margin: 1em;
-  column-count: 1;
-  column-gap: 18px;
-  max-height: 20em;
+.block > a {
   height: 100%;
   overflow: hidden;
   border-radius: 8px;
+  display: block;
+  margin-bottom: 1em;
 }
 
-.block > div > a img {
-  max-width: 200px;
+.block > a img {
+  max-width: 100%;
+}
+
+.inlineContent img {
+  max-width: 100%;
+}
+
+#cboxContent {
+  border-radius: 8px;
+  padding: 8px;
+}
+
+#cboxOverlay {
+  background: #000;
+}
+
+#cboxMiddleRight, #cboxTopRight,
+#cboxTop, #cboxBottom,
+#cbocBottomRight, #cboxTopLeft,
+#cboxBottomLeft, #cboxMiddleLeft,
+#cboxBottomRight, #cboxBottomCenter,
+#cboxTopCenter {
+  background: none;
 }
 /*# sourceMappingURL=style.css.map */

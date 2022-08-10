@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- fontawesome's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- colorbox's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/example1/colorbox.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,26 +22,69 @@
 
     </div>
     <div class="container block">
-        <div class="d-flex flex-wrap w-100">
             
-            <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
-                <img src="img/logo01.jpg" alt="">
+            <a class="inline" href="#dm03" target="">
+                <img src="img/dm03.webp" alt="">
+            </a>
+            <a class="inline" href="#dm01">
+                <img src="img/dm01-1.webp" alt="">
+            </a>
+            <a href="javascript:;" target="_blank">
+                <img src="img/logo01.webp" alt="">
+            </a>
+            <a href="javascript:;" target="_blank">
+                <img src="img/logo02.webp" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="img/login01.webp" alt="">
+            </a>
+            <!-- <a href="javascript:;">
+                <img src="img/login02.webp" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="img/login03.webp" alt="">
+            </a> -->
+            <a href="javascript:;">
+                <img src="img/paint01.webp" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="img/banner01.webp" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="img/banner02.webp" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="img/banner03.webp" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="img/banner04.webp" alt="">
             </a>
             <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
-                <img src="img/logo02.jpg" alt="">
+                <img src="img/edm02.webp" alt="">
+            </a>
+            <a class="inline" href="#edm03" target="_blank">
+            <!-- <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank"> -->
+                <img src="img/edm03.webp" alt="">
             </a>
             <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
-                <img src="img/dm01-1.jpg" alt="">
-            </a>
-            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
-                <img src="img/dm01-2.jpg" alt="">
+                <img src="img/edm04.webp" alt="">
             </a>
             <a href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp" target="_blank">
-                <img src="img/edm01.png" alt="">
+                <img src="img/edm01.webp" alt="">
             </a>
-            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
-                <img src="img/edm02.png" alt="">
-            </a>
+
+    </div>
+    <div style="display: none;">
+        <div id="dm01" class="inlineContent">
+            <img src="img/dm01-1.webp" alt="">
+            <br>
+            <img src="img/dm01-2.webp" alt="">
+        </div>
+        <div id="dm03" class="inlineContent">
+            <img src="img/dm03.webp" alt="">
+        </div>
+        <div id="edm03" class="inlineContent">
+            <img src="img/edm03.webp" alt="">
         </div>
     </div>
     <!-- <div class="container">
@@ -97,15 +142,7 @@
         </div>
 
     </div> -->
-    <div class="container-fulid footer">
-        <div class="email col-12 col-md-6">
-            <div class="foot-title">E-MAIL</div>
-            <div class="foot-content">SO8151@GMAIL.COM</div>
-        </div>
-        <div class="phone col-12 col-md-6">
-            <div class="foot-title">PHONE</div>
-            <div class="foot-content">0988027903</div>
-        </div>
+    <div id="footer">
     </div>
 
     <!-- jquery -->
@@ -140,6 +177,37 @@
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- js -->
     <script src="./js/main.js"></script>
-    
+    <!-- colorbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Examples of how to assign the Colorbox event to elements
+            $(".group1").colorbox({rel:'group1'});
+            $(".group2").colorbox({rel:'group2', transition:"fade"});
+            $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+            $(".group4").colorbox({rel:'group4', slideshow:true});
+            $(".ajax").colorbox();
+            $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+            $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+            $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+            $(".inline").colorbox({inline:true, width:"50%"});
+            $(".callbacks").colorbox({
+                onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+                onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+                onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+                onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+                onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+            });
+
+            $('.non-retina').colorbox({rel:'group5', transition:'none'})
+            $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+            
+            //Example of preserving a JavaScript event for inline calls.
+            $("#click").click(function(){ 
+                $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>

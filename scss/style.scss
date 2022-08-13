@@ -58,6 +58,9 @@ body {
         margin-right: auto;
         text-align: center;
         // padding: 20px;
+        img {
+            margin-right: 0.5em;
+        }
     }
     .web-nav {
     }
@@ -284,7 +287,7 @@ ul.navBar {
     margin-top: 24px;
 
     // 欄距寬
-    column-gap: 1em;
+    // column-gap: 1em;
 
     // 二擇一寬度or欄數
     column-width: 240px;
@@ -303,6 +306,7 @@ ul.navBar {
         display: block;
         margin-bottom: 1em;
         position: relative;
+        max-height: 320px;
         img {
             max-width: 100%;
         }
@@ -318,9 +322,18 @@ ul.navBar {
             // display: flex;
             // flex-wrap: wrap;
             // justify-content: center;
-            padding-top: 2em;
+            // padding-top: 2em;
             text-align: center;
             margin: 0 auto;
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .title {
+                font-size: 20px;
+            }
         }
         &:hover .hover {
             opacity: 1;

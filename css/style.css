@@ -8127,6 +8127,10 @@ body {
   text-align: center;
 }
 
+#header .web-title img {
+  margin-right: 0.5em;
+}
+
 #header .header-bgc {
   background-color: #D6B98D;
   height: 24px;
@@ -8267,7 +8271,6 @@ ul.navBar li a.active::after {
 
 .block {
   margin-top: 24px;
-  column-gap: 1em;
   column-width: 240px;
 }
 
@@ -8278,6 +8281,7 @@ ul.navBar li a.active::after {
   display: block;
   margin-bottom: 1em;
   position: relative;
+  max-height: 320px;
 }
 
 .block > a img {
@@ -8293,9 +8297,19 @@ ul.navBar li a.active::after {
   height: 100%;
   position: absolute;
   top: 0;
-  padding-top: 2em;
   text-align: center;
   margin: 0 auto;
+}
+
+.block > a .hover .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block > a .hover .title {
+  font-size: 20px;
 }
 
 .block > a:hover .hover {

@@ -8281,7 +8281,6 @@ ul.navBar li a.active::after {
   display: block;
   margin-bottom: 1em;
   position: relative;
-  max-height: 320px;
 }
 
 .block > a img {

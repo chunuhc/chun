@@ -8308,7 +8308,7 @@ ul.navBar li a.active::after {
 }
 
 .block > a .hover .title {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .block > a:hover .hover {

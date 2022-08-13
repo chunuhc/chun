@@ -315,10 +315,12 @@ ul.navBar {
             height: 100%;
             position: absolute;
             top: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
             padding-top: 2em;
+            text-align: center;
+            margin: 0 auto;
         }
         &:hover .hover {
             opacity: 1;

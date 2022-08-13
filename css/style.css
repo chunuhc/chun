@@ -8293,10 +8293,9 @@ ul.navBar li a.active::after {
   height: 100%;
   position: absolute;
   top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding-top: 2em;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .block > a:hover .hover {

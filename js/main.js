@@ -37,6 +37,10 @@ window.onload = function() {
     footer.innerHTML = res.data;
   })
 
+
+
+
+  // 滾動釘選header修改中
   var body = document.getElementsByTagName('body');
   var headerH = header.offsetHeight();
   
@@ -59,6 +63,33 @@ window.onload = function() {
     
   //   this.addClass('active').siblings.removeClass('active');
   // })
+
+
+  
+            // 點擊切換分頁參考
+            $("#parentHTab").each(function () {
+              var $li = $("ul.tab li");
+              $($li.eq(0).addClass("active").find("a").attr("href"))
+                  .siblings(".tab-content")
+                  .hide();
+
+              $li.click(function () {
+                  $($(this).find("a").attr("href"))
+                      .show()
+                      .siblings(".tab-content")
+                      .hide();
+
+                  $(this)
+                      .addClass("active")
+                      .siblings(".active")
+                      .removeClass("active");
+
+                  if ($(this).hasClass("myCalendar")) {
+                      calendar.render();
+                  };
+                  return false;
+              });
+          });
 }
 
 $(document).ready(function () {

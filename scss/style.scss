@@ -63,6 +63,7 @@ body {
         }
     }
     .web-nav {
+        text-transform: uppercase;
     }
     .header-bgc {
         background-color: $main02;
@@ -76,10 +77,11 @@ body {
         // align-items: center;
         // justify-content: space-between;
         // justify-content: space-evenly;
-        height: 128px;
+        height: 158px;
         align-items: center;
         transform: translateY(8px);
-        @media (min-width: 768px) {
+        @media (min-width: 576px) {
+            height: 128px;
             transform: translateY(-24px);
         }
     }
@@ -267,7 +269,7 @@ ul.navBar {
     flex-wrap: wrap;
     color: $main03;
     align-items: center;
-    justify-content: space-around;
+    // justify-content: space-around;
     .email, .phone {
         display: flex;
         justify-content: center;
@@ -340,6 +342,7 @@ ul.navBar {
         }
     }
 }
+
 .inlineContent {
     // width: 100%;
     // display: flex;
@@ -347,6 +350,27 @@ ul.navBar {
         max-width: 100%;
     }
 }
+
+.about {
+    .aboutTitle {
+
+    }
+    .aboutImg {
+        max-width: 80px;
+        max-height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .aboutDetail {
+
+    }
+}
+
+
 #cboxContent {
     border-radius: 8px;
     padding: 8px;

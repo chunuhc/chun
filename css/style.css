@@ -8484,6 +8484,7 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 .about .aboutTitle ul,
 .about .aboutDetail ul {
   list-style-type: circle;
+  padding-left: 1em;
 }
 
 .about .aboutImg {

@@ -102,9 +102,14 @@
 // }
 
 $(document).ready(function () {
-  console.log(234);
+  
+
+
+  // header載入begin
+
+  // $('#header').load('./header.html');
+
   var header = document.getElementById('header');
-  var footer = document.getElementById('footer');
 
   axios.get('./header.html')
   .then(function(res) {
@@ -127,17 +132,31 @@ $(document).ready(function () {
       });
 
       // 預設值
-      $('#aboutTab').addClass('active')
+      $('#allTab').addClass('active')
       .parent().siblings().find('a').removeClass('active');
-      $('#aboutTabContent').fadeIn(1000)
+      $('#allTabContent').fadeIn(1000)
         .siblings('.tabContent').fadeOut(1000);
         return false;
   })
 
-  axios.get('./footer.html')
-  .then(function(res) {
-    footer.innerHTML = res.data;
-  })
+
+  // header載入end
+
+
+
+  // footer載入begin
+
+  $('#footer').load('./footer.html');
+ 
+  // var footer = document.getElementById('footer');
+
+  // axios.get('./footer.html')
+  // .then(function(res) {
+  //   footer.innerHTML = res.data;
+  // })
+
+  // footer載入end
+
 
 
   // // swiper
@@ -160,8 +179,5 @@ $(document).ready(function () {
   //     observeParents: true, //修改swiper的父元素时，自动初始化swiper
   // });
 
-
-  
- 
 
 })

@@ -8116,8 +8116,16 @@ body {
   background-color: #E5CDA9;
   color: #fff;
   width: 100%;
-  position: relative;
+  top: 0;
+  position: sticky;
   z-index: 20;
+  height: 128px;
+}
+
+@media (max-width: 575px) {
+  #header {
+    height: 158px;
+  }
 }
 
 #header .web-title {
@@ -8181,14 +8189,14 @@ ul.navBar li a {
   text-decoration: none;
   border-radius: 1em;
   position: relative;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 ul.navBar li a.active {
   opacity: 1;
 }
 
-ul.navBar li a.active::after {
+ul.navBar li a.active::after, ul.navBar li a:hover::after {
   content: "";
   background-color: #fff;
   width: 16px;

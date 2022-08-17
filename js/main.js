@@ -59,10 +59,10 @@ $(document).ready(function () {
 
   // var $item = $(".block a");
 
-  $('.block a').slice(0, 10).css('display', 'block');
+  $('.block a').slice(0, 4).css('display', 'block');
   
   $('#moreBtn').click(function() {
-      $('.block a:hidden').slice(0, 10).css('display', 'block');
+      $('.block a:hidden').slice(0, 4).css('display', 'block');
       if($(".block a:hidden").length == 0) {
         $("#moreBtn").text("No More").addClass("null");
       }

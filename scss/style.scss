@@ -291,9 +291,6 @@ ul.navBar {
     }
 }
 
-#webUi {
-}
-
 .tabContent {
     // transition: 屬性 持續時間 delay時間 變化函數;
     transition: all 0.5s linear;
@@ -302,6 +299,10 @@ ul.navBar {
     @media (min-width: 576px) {
         // margin-top: 156px;
     }
+}
+
+#allTabContent {
+    text-align: center;
 }
 
 .block {
@@ -324,7 +325,8 @@ ul.navBar {
         height: 100%;
         overflow: hidden;
         border-radius: 8px;
-        display: block;
+        // display: block;
+        display: none;
         margin-bottom: 1em;
         position: relative;
         // max-height: 320px;
@@ -359,6 +361,28 @@ ul.navBar {
         &:hover .hover {
             opacity: 1;
         }
+    }
+}
+#moreBtn {
+    color: #fff;
+    background-color: #d6ba8d;
+    margin-top: 4em;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px 16px;
+    box-shadow: 0 2px 0 #fff;
+    &:hover {
+        background-color: #c7aa7c;
+        box-shadow: none;
+    }
+    &:focus {
+        outline: none;
+    }
+    &.null {
+        background-color: #c5c5c5;
+        box-shadow: none;
     }
 }
 

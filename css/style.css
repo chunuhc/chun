@@ -8286,6 +8286,10 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   margin-top: 24px;
 }
 
+#allTabContent {
+  text-align: center;
+}
+
 .block {
   column-width: 240px;
 }
@@ -8294,7 +8298,7 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   height: 100%;
   overflow: hidden;
   border-radius: 8px;
-  display: block;
+  display: none;
   margin-bottom: 1em;
   position: relative;
 }
@@ -8329,6 +8333,32 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 
 .block > a:hover .hover {
   opacity: 1;
+}
+
+#moreBtn {
+  color: #fff;
+  background-color: #d6ba8d;
+  margin-top: 4em;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 16px;
+  box-shadow: 0 2px 0 #fff;
+}
+
+#moreBtn:hover {
+  background-color: #c7aa7c;
+  box-shadow: none;
+}
+
+#moreBtn:focus {
+  outline: none;
+}
+
+#moreBtn.null {
+  background-color: #c5c5c5;
+  box-shadow: none;
 }
 
 .inlineContent img {

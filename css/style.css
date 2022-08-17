@@ -8338,6 +8338,16 @@ ul.navBar li a.active::after {
   font-size: 12px;
 }
 
+.about label:before {
+  content: '/';
+  padding-right: 4px;
+}
+
+.about label:after {
+  content: '/';
+  padding-left: 4px;
+}
+
 .about .aboutTitle,
 .about .aboutDetail {
   color: #484040;

@@ -374,6 +374,14 @@ ul.navBar {
     label {
         color: #aea08b;
         font-size: 12px;
+        &:before {
+            content: '/';
+            padding-right: 4px;
+        }
+        &:after {
+            content: '/';
+            padding-left: 4px;
+        }
     }
     .aboutTitle,
     .aboutDetail {

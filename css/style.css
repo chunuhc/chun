@@ -8116,8 +8116,8 @@ body {
   background-color: #E5CDA9;
   color: #fff;
   width: 100%;
-  top: 0;
   position: relative;
+  z-index: 20;
 }
 
 #header .web-title {
@@ -8273,8 +8273,12 @@ ul.navBar li a.active::after {
   margin-left: 1rem;
 }
 
-.block {
+.tabContent {
+  transition: all 0.5s linear;
   margin-top: 24px;
+}
+
+.block {
   column-width: 240px;
 }
 
@@ -8323,11 +8327,37 @@ ul.navBar li a.active::after {
   max-width: 100%;
 }
 
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+.about label {
+  color: #aea08b;
+}
+
+.about .aboutTitle,
+.about .aboutDetail {
+  color: #484040;
+  text-align: justify;
+}
+
+.about .aboutTitle .quas .jobTitle,
+.about .aboutDetail .quas .jobTitle {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #fff;
+  padding-bottom: 8px;
+}
+
 .about .aboutImg {
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 120px;
+  max-height: 120px;
   overflow: hidden;
   border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid #fff;
 }
 
 .about .aboutImg img {

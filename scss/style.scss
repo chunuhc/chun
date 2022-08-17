@@ -50,8 +50,10 @@ body {
     background-color: $main01;
     color: #fff;
     width: 100%;
-    top: 0;
+    // top: 0;
     position: relative;
+    // position: fixed;
+    z-index: 20;
     .web-title {
         font-size: 20px;
         font-weight: 600;
@@ -63,6 +65,7 @@ body {
         }
     }
     .web-nav {
+        // 大寫
         text-transform: uppercase;
     }
     .header-bgc {
@@ -285,8 +288,18 @@ ul.navBar {
 #webUi {
 }
 
-.block {
+.tabContent {
+    // transition: 屬性 持續時間 delay時間 變化函數;
+    transition: all 0.5s linear;
+    // margin-top: 180px;
     margin-top: 24px;
+    @media (min-width: 576px) {
+        // margin-top: 156px;
+    }
+}
+
+.block {
+    // margin-top: 24px;
 
     // 欄距寬
     // column-gap: 1em;
@@ -352,21 +365,39 @@ ul.navBar {
 }
 
 .about {
-    .aboutTitle {
-
+    display: flex;
+    flex-wrap: wrap;
+    // margin-top: 24px;
+    
+    // 大寫
+    text-transform: uppercase;
+    label {
+        color: #aea08b;
+    }
+    .aboutTitle,
+    .aboutDetail {
+        color: #484040;
+        text-align: justify;
+        .quas {
+            .jobTitle {
+                border-width: 0 0 1px 0;
+                border-style: solid;
+                border-color: #fff;
+                padding-bottom: 8px;
+            }
+        }
     }
     .aboutImg {
-        max-width: 80px;
-        max-height: 80px;
+        max-width: 120px;
+        max-height: 120px;
         overflow: hidden;
         border-radius: 50%;
+        margin: 0 auto;
+        border: 4px solid #fff;
         img {
             width: 100%;
             height: 100%;
         }
-    }
-    .aboutDetail {
-
     }
 }
 

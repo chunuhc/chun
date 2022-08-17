@@ -8110,6 +8110,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   background-color: #dfdad3;
+  position: relative;
+  height: 100vh;
 }
 
 #header {
@@ -8133,6 +8135,14 @@ body {
   font-weight: 600;
   margin-right: auto;
   text-align: center;
+}
+
+#header .web-title a {
+  color: #fff;
+}
+
+#header .web-title a:hover, #header .web-title a:focus {
+  text-decoration: none;
 }
 
 #header .web-title img {
@@ -8258,12 +8268,12 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   background-color: #E5CDA9;
 }
 
-.footer {
+#footer {
   width: 100%;
   height: 4em;
   background-color: #E5CDA9;
   margin-top: 40px;
-  position: inherit;
+  position: fixed;
   bottom: 0;
   display: flex;
   flex-wrap: wrap;
@@ -8271,22 +8281,46 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   align-items: center;
 }
 
-.footer .email, .footer .phone {
+#footer .email, #footer .phone {
   display: flex;
   justify-content: center;
 }
 
-.footer .foot-content {
+#footer .foot-content {
   margin-left: 1rem;
 }
 
 .tabContent {
   transition: all 0.5s linear;
   margin-top: 24px;
+  padding-bottom: 8em;
 }
 
 #allTabContent {
   text-align: center;
+  position: absolute;
+  top: 128px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 575px) {
+  #allTabContent {
+    top: 158px;
+  }
+}
+
+#aboutTabContent {
+  position: absolute;
+  top: 128px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 575px) {
+  #aboutTabContent {
+    top: 158px;
+  }
 }
 
 .searchBtnBlock button {

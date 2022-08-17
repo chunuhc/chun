@@ -13,6 +13,7 @@ $(document).ready(function () {
 
       header.innerHTML = res.data;
 
+
       // 點擊切換分頁
       $('.tabLink').click(function() {
         // var $li = $('ul.navBar li a');
@@ -22,17 +23,27 @@ $(document).ready(function () {
         
         $(this).addClass('active')
         .parent().siblings().find('a').removeClass('active');
-        $(url).fadeIn(1000)
-        .siblings('.tabContent').fadeOut(1000);
+        // 先隱藏再fadein
+        // header sticky
+        $(url).fadeIn(500)
+        .siblings('.tabContent').fadeOut(500);
         return false;
       });
 
       // 預設值
-      $('#allTab').addClass('active')
-      .parent().siblings().find('a').removeClass('active');
-      $('#allTabContent').fadeIn(1000)
-        .siblings('.tabContent').fadeOut(1000);
-        return false;
+      function resetFun() {
+        $('#allTab').addClass('active')
+        .parent().siblings().find('a').removeClass('active');
+        $('#allTabContent').fadeIn(500)
+          .siblings('.tabContent').fadeOut(500);
+          return false;
+          console.log('reset');
+          
+      };
+
+      resetFun();
+      
+
   })
 
 

@@ -333,7 +333,17 @@ ul.navBar {
     }
 }
 
-.searchBtnBlock {
+.sBar {
+    margin: 2em 0;
+    input {
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.sBtn {
     button {
         color: #fff;
         background-color: #d6ba8d;

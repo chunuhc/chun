@@ -24,9 +24,8 @@ $(document).ready(function () {
         .parent().siblings().find('a').removeClass('active');
         // 先隱藏再fadein
         // header sticky
-        $(url).parent().find('.tabContent').fadeOut(800, function() {
-          $(url).fadeIn(800);
-        });
+        $(url).siblings('.tabContent').fadeOut(500);
+        $(url).delay(500).fadeTo(500, 1);
         // $(url).fadeToggle(800);
         
         // function fadeNewNew() {
@@ -98,6 +97,33 @@ $(document).ready(function () {
   })
   
   ////// --載入更多內容 end--
+
+
+  ////// --搜尋 begin--
+
+  var sBar = $('#sBar');
+  var sBtn = $('#sBtn');
+
+  var keyword = '';
+  var sContent = null;
+  var sHtml = '';
+
+  // $(sBtn).keyUp(function(e) {
+  //   if(e.keyCode !== 13) return;
+  //   if(this.value === '') return console.log('null');
+    
+  //   if(this.value !== keyword) {
+  //     resetData();
+  //   }
+
+  //   keyword = this.value;
+  //   function searchTag(keyword) {
+  //     console.log(123);
+      
+  //   }
+  // })
+
+  ////// --搜尋 end--
 
 
 

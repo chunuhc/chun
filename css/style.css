@@ -8323,7 +8323,15 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   }
 }
 
-.searchBtnBlock button {
+.sBar {
+  margin: 2em 0;
+}
+
+.sBar input:focus {
+  outline: none;
+}
+
+.sBtn button {
   color: #fff;
   background-color: #d6ba8d;
   margin-bottom: 2em;
@@ -8334,15 +8342,15 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   padding: 4px 16px;
 }
 
-.searchBtnBlock button:hover {
+.sBtn button:hover {
   background-color: #c7aa7c;
 }
 
-.searchBtnBlock button:focus {
+.sBtn button:focus {
   outline: none;
 }
 
-.searchBtnBlock button.active {
+.sBtn button.active {
   background-color: #c7aa7c;
 }
 

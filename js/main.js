@@ -62,12 +62,11 @@ $(document).ready(function () {
   $('.block a').slice(0, 4).css('display', 'block');
   
   $('#moreBtn').click(function() {
-    console.log($('.block a:hidden').slice(0, 4));
 
-      // $('.block a:hidden').slice(0, 4).css('display', 'block');
-      // if($(".block a:hidden").length == 0) {
-      //   $("#moreBtn").text("No More").addClass("null");
-      // }
+      $('.block a:hidden').slice(0, 4).css('display', 'block');
+      if($(".block a:hidden").length == 0) {
+        $("#moreBtn").text("No More").addClass("null");
+      }
   })
   
   ////// --載入更多內容 end--

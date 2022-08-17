@@ -16,7 +16,6 @@ $(document).ready(function () {
 
       // 點擊切換分頁
       $('.tabLink').click(function() {
-        // var $li = $('ul.navBar li a');
         // console.log(123);
         // console.log($(this).attr('data-href'));
         var url = $(this).attr('href');
@@ -25,10 +24,28 @@ $(document).ready(function () {
         .parent().siblings().find('a').removeClass('active');
         // 先隱藏再fadein
         // header sticky
-        $(url).fadeIn(500)
-        .siblings('.tabContent').fadeOut(500);
+        $(url).parent().find('.tabContent').fadeOut(800, function() {
+          $(url).fadeIn(800);
+        });
+        // $(url).fadeToggle(800);
+        
+        // function fadeNewNew() {
+        //   $(url).fadeIn();
+        // }
         return false;
       });
+
+
+
+      // // var li = document.getElementById('slideSource');
+      // var url = $(this).attr('href');
+
+      // document.getElementsByClassName('tabLink').onclick = function () {
+      //   console.log(url);
+        
+      //   url.classList.toggle('fade');
+      //   return false;
+      // }
 
       // 預設值
       function resetFun() {

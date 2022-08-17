@@ -11,7 +11,6 @@ $(document).ready(function () {
   axios.get('./header.html')
   .then(function(res) {
 
-      // load('./header.html')
       header.innerHTML = res.data;
 
       // 點擊切換分頁
@@ -43,14 +42,14 @@ $(document).ready(function () {
 
   ////// --footer載入begin--
 
-  $('#footer').load('./footer.html');
+  // $('#footer').load('./footer.html');
  
-  // var footer = document.getElementById('footer');
+  var footer = document.getElementById('footer');
 
-  // axios.get('./footer.html')
-  // .then(function(res) {
-  //   footer.innerHTML = res.data;
-  // })
+  axios.get('./footer.html')
+  .then(function(res) {
+    footer.innerHTML = res.data;
+  })
 
   ////// footer載入end
 

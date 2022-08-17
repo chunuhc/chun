@@ -400,6 +400,19 @@ ul.navBar {
                 display: inline-block;
             }
         }
+        .school {
+            border-width: 0 0 1px 0;
+            border-style: solid;
+            border-color: #fff;
+            padding-bottom: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            color: #6d5757;
+            display: table;
+        }
+        ul {
+            list-style-type: circle;
+        }
     }
     .aboutImg {
         max-width: 120px;

@@ -22,15 +22,8 @@ $(document).ready(function () {
         
         $(this).addClass('active')
         .parent().siblings().find('a').removeClass('active');
-        // 先隱藏再fadein
-        // header sticky
         $(url).siblings('.tabContent').fadeOut(500);
         $(url).delay(500).fadeTo(500, 1);
-        // $(url).fadeToggle(800);
-        
-        // function fadeNewNew() {
-        //   $(url).fadeIn();
-        // }
         return false;
       });
 
@@ -82,31 +75,212 @@ $(document).ready(function () {
 
 
 
-  ////// --載入更多內容 begin--
-
-  // var $item = $(".block a");
-
-  $('.block a').slice(0, 4).css('display', 'block');
-  
-  $('#moreBtn').click(function() {
-
-      $('.block a:hidden').slice(0, 4).css('display', 'block');
-      if($(".block a:hidden").length == 0) {
-        $("#moreBtn").text("No More").addClass("null");
-      }
-  })
-  
-  ////// --載入更多內容 end--
 
 
   ////// --搜尋 begin--
 
-  var sBar = $('#sBar');
-  var sBtn = $('#sBtn');
+  var pContent = {
+    "文宣設計": [
+      {
+        hashtag: ['文宣設計', 'Illustrator', 'Photoshop'],
+        title: '記帳士手冊封面',
+        href: '#dm03',
+        classN: 'inline',
+        src: 'img/dm03.webp'
+      },
+      {
+        hashtag: ['文宣設計', 'Illustrator'],
+        title: '文化行政傳單DM',
+        href: '#dm01',
+        classN: 'inline',
+        src: 'img/dm01-1.webp'
+      }
+    ],
+    "Logo設計": [
+      {
+        hashtag: ['Logo設計', 'Illustrator'],
+        title: 'DoWell Logo',
+        href: '#logo01',
+        classN: 'inline',
+        src: 'img/logo01.webp'
+      }
+    ],
+    "UI設計": [
+      {
+        hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
+        title: 'TKBGO登入註冊跳窗設計切版',
+        href: 'login01',
+        classN: 'inline',
+        src: 'img/login01.webp'
+      },
+      {
+        hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
+        title: '高中段考守護神詳細頁設計切版',
+        href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
+        classN: 'inline',
+        src: 'img/edm02-th.webp'
+      },
+      {
+        hashtag: ['UI設計', '切版', 'Illustrator', 'Figma', 'Html', 'Css', 'JavaScript'],
+        title: '外交官特考詳細頁設計切版',
+        href: 'https://www.tkbgo.com.tw/go_edm/edm215/index.jsp',
+        classN: 'inline',
+        src: 'img/edm03-th.webp'
+      },
+      {
+        hashtag: ['UI設計','Illustrator', 'Figma', 'Html', 'Css', 'JavaScript'],
+        title: '上榜頂大詳細頁設計切版',
+        href: 'https://www.tkbgo.com.tw/go_edm/edm220/index.jsp',
+        classN: 'inline',
+        src: 'img/edm01-th.webp'
+      },
+      {
+        hashtag: ['UI設計','Illustrator', 'Xd'],
+        title: '學習歷程檔案詳細頁設計',
+        href: '#edm04',
+        classN: 'inline',
+        src: 'img/edm04-th.webp'
+      }
+    ],
+    "Banner設計": [
+      {
+        hashtag: ['Banner設計','Illustrator'],
+        title: '記帳士優惠Banner',
+        href: '#banner01',
+        classN: 'inline',
+        src: 'img/banner01.webp'
+      },
+      {
+        hashtag: ['Banner設計','Illustrator'],
+        title: '銀行招考直播Banner',
+        href: '#banner02',
+        classN: 'inline',
+        src: 'img/banner02.webp'
+      }
+    ],
+    "吉祥物設計": [
+      {
+        hashtag: ['吉祥物設計','Illustrator'],
+        title: 'TKB日文吉祥物',
+        href: '#paint01',
+        classN: 'inline',
+        src: 'img/paint01.webp'
+      }
+    ],
+    "圖說設計": [
+      {
+        hashtag: ['圖說設計','Illustrator'],
+        title: '高中升學路徑說明圖',
+        href: '#banner03',
+        classN: 'inline',
+        src: 'img/banner03.webp'
+      },
+      {
+        hashtag: ['圖說設計','Illustrator'],
+        title: '前端必修課程封面圖',
+        href: '#banner04',
+        classN: 'inline',
+        src: 'img/banner04.webp'
+      }
+    ]
+  }
+
+  var searchBar = $('.searchBar:text');
+  var sContent = $('.blockList');
+  var sTag = $('#sBtn button');
+  var sArr = [];
+  var html = '';
+  // var sContent = $('.block')[0];
+
+  for(var s = 0; s < sTag.length; s++) {
+    sTag[s].addEventListener('click', tagSearch);
+  }
+
+
+  // sArr = pContent;
+  // sArr.push(pContent);
+  sArr =  Object.entries(pContent);
+  console.log(sArr[0][1][0].classN);
+  
+  var str = '';
+  for(var i = 0; i < sArr.length; i++) {
+    // console.log(sArr[i]);
+    for(var j = 0; j < sArr[i][1].length; j++) {
+      str = sArr[i][1][j];
+      html += '<a class="'+str.classN+'" href="'+str.href+'">'
+      html += '<div class="hover"><div class="content">'
+      html += '<div class="hashtag">'+str.hashtag+'</div>'
+      html += '<div class="title">'+str.title+'</div></div></div>'
+      html += '<img src="'+str.src+'" alt="'+str.title+'"></a>'
+    }
+
+  }
+  // console.log('1 '+sContent);
+  sContent.html(html);
+  // console.log(sContent);
+
+  loadMore(sArr.length);
+
+  function tagSearch() {
+
+    html = '';
+    sContent.html(html);
+
+    // console.log(this.innerText);
+    // console.log(pContent[this.innerText]);
+    
+    // search.value = this.innerText;
+    sArr = pContent[this.innerText];
+    searchBar.val(this.innerText);
+    // console.log($('#searchBar:text'));
+    
+    
+    
+    for(var i = 0; i < sArr.length; i++) {
+      // console.log(sArr[i]);
+      
+      html += '<a class="'+sArr[i].classN+'" href="'+sArr[i].href+'">'
+      html += '<div class="hover"><div class="content">'
+      html += '<div class="hashtag">'+sArr[i].hashtag+'</div>'
+      html += '<div class="title">'+sArr[i].title+'</div></div></div>'
+      html += '<img src="'+sArr[i].src+'" alt="'+sArr[i].title+'"></a>'
+    }
+      // console.log('1 '+sContent);
+      sContent.html(html);
+      // console.log(sContent);
+
+      loadMore(sArr.length);
+      
+  }
+  // for迴圈不能使用匿名函示
 
   var keyword = '';
-  var sContent = null;
   var sHtml = '';
+
+  // function DomRender() {
+  //   html = '';
+  //   sContent.innerHTML = '';
+  //   for(i = 0; i < pContent.length; i++) {
+  //     html += '<a class="'+pContent[i].class+'" href="'+pContent[i].href+'">'
+  //     html += '<div class="hover"><div class="content">'
+  //     html += '<div class="hashtag">'+pContent[i].hashtag+'</div>'
+  //     html += '<div class="title">'+pContent[i].title+'</div></div></div>'
+  //     html += '<img src="'+pContent[i].src+'" alt="'+pContent[i].title+'"></a>'
+  //   }
+
+  //   sContent.innerHTML = html;
+  // }
+  // DomRender();
+
+  // <a class="inline" href="#logo01">
+  //     <div class="hover">
+  //         <div class="content">
+  //             <div class="hashtag">#Logo設計 #Illustrator</div>
+  //             <div class="title">DoWell Logo</div>
+  //         </div>
+  //     </div>
+  //     <img src="img/logo01.webp" alt="DOWELL LOGO">
+  // </a>
 
   // $(sBtn).keyUp(function(e) {
   //   if(e.keyCode !== 13) return;
@@ -124,6 +298,41 @@ $(document).ready(function () {
   // })
 
   ////// --搜尋 end--
+
+  
+
+  ////// --載入更多內容 begin--
+
+  // var $item = $(".block a");
+
+  function loadMore(count) {
+
+    // console.log(count);
+    
+
+    if(count < 4) {
+      $("#moreBtn").text("No More").addClass("null");
+    } else {
+      $("#moreBtn").text("Load More").removeClass("null");
+    }
+
+    $('.blockList a').slice(0, 4).css('display', 'block');
+    
+    $('#moreBtn').click(function() {
+  
+        $('.blockList a:hidden').slice(0, 4).css('display', 'block');
+        if($(".blockList a:hidden").length == 0) {
+          $("#moreBtn").text("No More").addClass("null");
+        }
+    })
+
+    // console.log(count);
+    
+
+  }
+
+  
+  ////// --載入更多內容 end--
 
 
 

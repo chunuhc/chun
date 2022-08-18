@@ -8354,11 +8354,11 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   background-color: #c7aa7c;
 }
 
-.block {
+.blockList {
   column-width: 240px;
 }
 
-.block > a {
+.blockList > a {
   height: 100%;
   overflow: hidden;
   border-radius: 8px;
@@ -8367,11 +8367,11 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   position: relative;
 }
 
-.block > a img {
+.blockList > a img {
   max-width: 100%;
 }
 
-.block > a .hover {
+.blockList > a .hover {
   opacity: 0;
   transition: opacity 0.15s ease;
   background-color: #00000050;
@@ -8384,18 +8384,18 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   margin: 0 auto;
 }
 
-.block > a .hover .content {
+.blockList > a .hover .content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.block > a .hover .title {
+.blockList > a .hover .title {
   font-size: 18px;
 }
 
-.block > a:hover .hover {
+.blockList > a:hover .hover {
   opacity: 1;
 }
 
@@ -8423,6 +8423,7 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 #moreBtn.null {
   background-color: #c5c5c5;
   box-shadow: none;
+  cursor: unset;
 }
 
 .inlineContent img {

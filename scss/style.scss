@@ -365,7 +365,7 @@ ul.navBar {
     }
 }
 
-.block {
+.blockList {
     // margin-top: 24px;
 
     // 欄距寬
@@ -443,6 +443,7 @@ ul.navBar {
     &.null {
         background-color: #c5c5c5;
         box-shadow: none;
+        cursor: unset;
     }
 }
 

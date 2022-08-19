@@ -206,15 +206,9 @@ $(document).ready(function () {
   // var sContent = $('.block')[0];
 
   for(var s = 0; s < sTag.length; s++) {
-    // sTag[s].addEventListener('click', tagSearch);
-
-    // if(this.id == 'allBtn') {
-    //   console.log('yes');
-    //   allBlock();
-    // }
-
 
     sTag[s].addEventListener('click', function() {
+
       if(this.id !== 'allBtn') {
         console.log('no');
         tagSearch(this.innerText);
@@ -222,6 +216,9 @@ $(document).ready(function () {
         console.log('yes');
         allBlock();
       }
+      // console.log(this);
+      $(this).addClass('active').siblings().removeClass('active');
+      
     });
 
   }
@@ -307,7 +304,9 @@ $(document).ready(function () {
     
     // search.value = this.innerText;
     sArr = pContent[sText];
-    searchBar.val(sText);
+
+
+    // searchBar.val(sText);
     // console.log($('#searchBar:text'));
     
     // console.log('sArr '+pContent[sText]);

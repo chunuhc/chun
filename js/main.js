@@ -86,6 +86,7 @@ $(document).ready(function () {
         title: '記帳士手冊封面',
         href: '#dm03',
         classN: 'inline',
+        target: '',
         src: 'img/dm03.webp'
       },
       {
@@ -93,6 +94,7 @@ $(document).ready(function () {
         title: '文化行政傳單DM',
         href: '#dm01',
         classN: 'inline',
+        target: '',
         src: 'img/dm01-1.webp'
       }
     ],
@@ -102,6 +104,7 @@ $(document).ready(function () {
         title: 'DoWell Logo',
         href: '#logo01',
         classN: 'inline',
+        target: '',
         src: 'img/logo01.webp'
       }
     ],
@@ -109,29 +112,33 @@ $(document).ready(function () {
       {
         hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
         title: 'TKBGO登入註冊跳窗設計切版',
-        href: 'login01',
+        href: '#login01',
         classN: 'inline',
+        target: '',
         src: 'img/login01.webp'
       },
       {
         hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
         title: '高中段考守護神詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
-        classN: 'inline',
+        classN: '',
+        target: '_blank',
         src: 'img/edm02-th.webp'
       },
       {
         hashtag: ['UI設計', '切版', 'Illustrator', 'Figma', 'Html', 'Css', 'JavaScript'],
         title: '外交官特考詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm215/index.jsp',
-        classN: 'inline',
+        classN: '',
+        target: '_blank',
         src: 'img/edm03-th.webp'
       },
       {
         hashtag: ['UI設計','Illustrator', 'Figma', 'Html', 'Css', 'JavaScript'],
         title: '上榜頂大詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm220/index.jsp',
-        classN: 'inline',
+        classN: '',
+        target: '_blank',
         src: 'img/edm01-th.webp'
       },
       {
@@ -139,6 +146,7 @@ $(document).ready(function () {
         title: '學習歷程檔案詳細頁設計',
         href: '#edm04',
         classN: 'inline',
+        target: '',
         src: 'img/edm04-th.webp'
       }
     ],
@@ -148,6 +156,7 @@ $(document).ready(function () {
         title: '記帳士優惠Banner',
         href: '#banner01',
         classN: 'inline',
+        target: '',
         src: 'img/banner01.webp'
       },
       {
@@ -155,6 +164,7 @@ $(document).ready(function () {
         title: '銀行招考直播Banner',
         href: '#banner02',
         classN: 'inline',
+        target: '',
         src: 'img/banner02.webp'
       }
     ],
@@ -164,6 +174,7 @@ $(document).ready(function () {
         title: 'TKB日文吉祥物',
         href: '#paint01',
         classN: 'inline',
+        target: '',
         src: 'img/paint01.webp'
       }
     ],
@@ -173,6 +184,7 @@ $(document).ready(function () {
         title: '高中升學路徑說明圖',
         href: '#banner03',
         classN: 'inline',
+        target: '',
         src: 'img/banner03.webp'
       },
       {
@@ -180,6 +192,7 @@ $(document).ready(function () {
         title: '前端必修課程封面圖',
         href: '#banner04',
         classN: 'inline',
+        target: '',
         src: 'img/banner04.webp'
       }
     ]
@@ -193,35 +206,98 @@ $(document).ready(function () {
   // var sContent = $('.block')[0];
 
   for(var s = 0; s < sTag.length; s++) {
-    sTag[s].addEventListener('click', tagSearch);
+    // sTag[s].addEventListener('click', tagSearch);
+
+    // if(this.id == 'allBtn') {
+    //   console.log('yes');
+    //   allBlock();
+    // }
+
+
+    sTag[s].addEventListener('click', function() {
+      if(this.id !== 'allBtn') {
+        console.log('no');
+        tagSearch(this.innerText);
+      } else {
+        console.log('yes');
+        allBlock();
+      }
+    });
+
   }
 
+  // var sBtnItem = document.getElementsByClassName('sBtnItem')
+
+  // sBtnItem.addEventListener('click', function() {
+  //   if(this.id == 'allBtn') {
+  //     console.log('yes');
+  //     allBlock();
+  //   } else {
+  //     console.log('no');
+  //     for(var s = 0; s < sTag.length; s++) {
+  //       sTag[s].addEventListener('click', tagSearch);
+  //     }
+  //   }
+  // })
+
+  // $('#sBtn button').click(function() {
+  //   if(this.id == 'allBtn') {
+  //     console.log('yes');
+  //     allBlock();
+  //   } else {
+  //     console.log('no');
+  //     for(var s = 0; s < sTag.length; s++) {
+  //       sTag[s].addEventListener('click', tagSearch);
+  //     }
+  //   }
+  // })
 
   // sArr = pContent;
   // sArr.push(pContent);
-  sArr =  Object.entries(pContent);
-  console.log(sArr[0][1][0].classN);
-  
-  var str = '';
-  for(var i = 0; i < sArr.length; i++) {
-    // console.log(sArr[i]);
-    for(var j = 0; j < sArr[i][1].length; j++) {
-      str = sArr[i][1][j];
-      html += '<a class="'+str.classN+'" href="'+str.href+'">'
-      html += '<div class="hover"><div class="content">'
-      html += '<div class="hashtag">'+str.hashtag+'</div>'
-      html += '<div class="title">'+str.title+'</div></div></div>'
-      html += '<img src="'+str.src+'" alt="'+str.title+'"></a>'
-    }
 
+
+  // 全部顯示
+  function allBlock() {
+
+    html = '';
+    sContent.html(html);
+
+    sArr =  Object.entries(pContent);
+    // console.log('allBlock : '+sArr);
+    
+    // console.log(sArr[0][1][0].classN);
+    
+  
+    var str = '';
+    for(var i = 0; i < sArr.length; i++) {
+      // console.log(sArr[i]);
+      for(var j = 0; j < sArr[i][1].length; j++) {
+        str = sArr[i][1][j];
+        html += '<a class="'+str.classN+'" href="'+str.href+'" target="'+str.target+'">'
+        html += '<div class="hover"><div class="content">'
+        html += '<div class="hashtag">'+str.hashtag+'</div>'
+        html += '<div class="title">'+str.title+'</div></div></div>'
+        html += '<img src="'+str.src+'" alt="'+str.title+'"></a>'
+      }
+  
+    }
+    sContent.html(html);
+    loadMore(sArr.length);
+    
   }
+
+  allBlock();
+  // loadMore(sArr.length);
+
+
+
   // console.log('1 '+sContent);
-  sContent.html(html);
+  // sContent.html(html);
   // console.log(sContent);
 
-  loadMore(sArr.length);
+  
 
-  function tagSearch() {
+  function tagSearch(sText) {
 
     html = '';
     sContent.html(html);
@@ -230,16 +306,18 @@ $(document).ready(function () {
     // console.log(pContent[this.innerText]);
     
     // search.value = this.innerText;
-    sArr = pContent[this.innerText];
-    searchBar.val(this.innerText);
+    sArr = pContent[sText];
+    searchBar.val(sText);
     // console.log($('#searchBar:text'));
     
+    // console.log('sArr '+pContent[sText]);
     
     
     for(var i = 0; i < sArr.length; i++) {
       // console.log(sArr[i]);
       
-      html += '<a class="'+sArr[i].classN+'" href="'+sArr[i].href+'">'
+      // html += '<a class="'+sArr[i].classN+'" href="'+sArr[i].href+'">'
+      html += '<a class="'+sArr[i].classN+'" href="'+sArr[i].href+'" target="'+sArr[i].target+'">'
       html += '<div class="hover"><div class="content">'
       html += '<div class="hashtag">'+sArr[i].hashtag+'</div>'
       html += '<div class="title">'+sArr[i].title+'</div></div></div>'
@@ -310,13 +388,13 @@ $(document).ready(function () {
     // console.log(count);
     
 
-    if(count < 4) {
+    if(count <= 5) {
       $("#moreBtn").text("No More").addClass("null");
     } else {
       $("#moreBtn").text("Load More").removeClass("null");
     }
 
-    $('.blockList a').slice(0, 4).css('display', 'block');
+    $('.blockList a').slice(0, 5).css('display', 'block');
     
     $('#moreBtn').click(function() {
   

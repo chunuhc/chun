@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <title>CHUN CHEN ｜ PORFOLIO</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Link Swiper's CSS -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
     <!-- fontawesome's CSS -->
@@ -24,18 +25,18 @@
     </div>
     <div id="allTabContent" class="container tabContent">
         
-        <!-- lightbox跳窗內頁、用搜尋寫篩選、圖片調整mockup、AOS、lazyload、allBtn+target、比例 -->
+        <!-- lightbox跳窗內頁、用搜尋寫篩選、圖片調整mockup、AOS、lazyload、比例 -->
         <div id="sBar" class="sBar" style="display: none;">
             <input class="searchBar" type="text">
         </div>
         <div id="sBtn" class="sBtn">
-            <button>ALL</button>
-            <button>文宣設計</button>
-            <button>Logo設計</button>
-            <button>UI設計</button>
-            <button>Banner設計</button>
-            <button>吉祥物設計</button>
-            <button>圖說設計</button>
+            <button id="allBtn" class="sBtnItem">ALL</button>
+            <button class="sBtnItem">文宣設計</button>
+            <button class="sBtnItem">Logo設計</button>
+            <button class="sBtnItem">UI設計</button>
+            <button class="sBtnItem">Banner設計</button>
+            <button class="sBtnItem">吉祥物設計</button>
+            <button class="sBtnItem">圖說設計</button>
         </div>
         <div class="blockList">
             
@@ -383,6 +384,8 @@
     <script src="./js/main.js"></script>
     <!-- colorbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <!-- bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             //Examples of how to assign the Colorbox event to elements

@@ -44,8 +44,7 @@
 
 body {
     background-color: rgb(223, 218, 211);
-    position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 #header {
@@ -106,6 +105,17 @@ body {
         height: max-content;
     }
 
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.mainContent{
+    min-height: 100%;
+    // padding-top: 50px;
+    // padding-bottom: 50px;
 }
 
 ul.navBar {
@@ -275,12 +285,12 @@ ul.navBar {
 
 #footer {
     width: 100%;
-    height: 4em;
+    height: 2em;
     background-color: $main01;
     // border-radius: 50px 50px 0 0;
     margin-top: 40px;
-    // position: absolute;
-    position: fixed;
+    position: absolute;
+    // position: fixed;
     bottom: 0;
     // font-size: 20px;
     display: flex;
@@ -288,6 +298,11 @@ ul.navBar {
     color: $main03;
     align-items: center;
     // justify-content: space-around;
+    font-size: 12px;
+
+    position: relative;
+    top: -100px;
+    height: 50px;
     .email, .phone {
         display: flex;
         justify-content: center;
@@ -306,6 +321,8 @@ ul.navBar {
     // margin-top: 180px;
     margin-top: 24px;
     padding-bottom: 8em;
+    position: relative;
+    top: 0;
     @media (min-width: 576px) {
         // margin-top: 156px;
     }
@@ -313,20 +330,20 @@ ul.navBar {
 
 #allTabContent {
     text-align: center;
-    position: absolute;
-    top: 128px;
-    left: 50%;
-    transform: translateX(-50%);
+    // position: absolute;
+    // top: 128px;
+    // left: 50%;
+    // transform: translateX(-50%);
 
     @media (max-width: 575px) {
         top: 158px;
     }
 }
 #aboutTabContent {
-    position: absolute;
-    top: 128px;
-    left: 50%;
-    transform: translateX(-50%);
+    // position: absolute;
+    // top: 128px;
+    // left: 50%;
+    // transform: translateX(-50%);
 
     @media (max-width: 575px) {
         top: 158px;
@@ -362,6 +379,9 @@ ul.navBar {
         &.active {
             background-color: #c7aa7c;
         }
+        @media (max-width: 575px) {
+            margin-bottom: 1em;
+        }
     }
 }
 
@@ -377,6 +397,8 @@ ul.navBar {
 
     // 換欄設定：auto/avoid
     // column-break-inside: auto;
+
+    transition: all 0.5s linear;
     > a {
         // max-width: 100%;
         // margin: 1em;
@@ -390,6 +412,7 @@ ul.navBar {
         margin-bottom: 1em;
         position: relative;
         // max-height: 320px;
+        transition: all 0.5s linear;
         img {
             max-width: 100%;
         }
@@ -458,6 +481,7 @@ ul.navBar {
 .about {
     display: flex;
     flex-wrap: wrap;
+    // justify-content: space-evenly;
     // margin-top: 24px;
     
     // 大寫

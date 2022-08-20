@@ -18,361 +18,208 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 </head>
-<!-- js load #header #footer  -->
+<!-- 切換頁籤後無法顯示 -->
 <body>
-    <div id="header">
-
-    </div>
-    <div id="allTabContent" class="container tabContent">
-        
-        <!-- lightbox跳窗內頁、用搜尋寫篩選、圖片調整mockup、AOS、lazyload圖片大小加載速度、比例 -->
-        <div id="sBar" class="sBar" style="display: none;">
-            <input class="searchBar" type="text">
-        </div>
-        <div id="sBtn" class="sBtn">
-            <button id="allBtn" class="sBtnItem active">ALL</button>
-            <button class="sBtnItem">文宣設計</button>
-            <button class="sBtnItem">Logo設計</button>
-            <button class="sBtnItem">UI設計</button>
-            <button class="sBtnItem">Banner設計</button>
-            <button class="sBtnItem">吉祥物設計</button>
-            <button class="sBtnItem">圖說設計</button>
-        </div>
-        <div class="blockList">
-            
-        </div>
-        <!-- <div class="blockList">
-
-            <a class="inline" href="#dm03">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#文宣設計 #Illustrator #Photoshop</div>
-                        <div class="title">記帳士手冊封面</div>
-                    </div>
-                </div>
-                <img src="img/dm03.webp" alt="記帳士手冊封面">
-            </a>
-            <a class="inline" href="#dm01">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#文宣設計 #Illustrator</div>
-                        <div class="title">文化行政傳單DM</div>
-                    </div>
-                </div>
-                <img src="img/dm01-1.webp" alt="文化行政傳單DM">
-            </a>
-            <a class="inline" href="#logo01">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#Logo設計 #Illustrator</div>
-                        <div class="title">DoWell Logo</div>
-                    </div>
-                </div>
-                <img src="img/logo01.webp" alt="DOWELL LOGO">
-            </a>
-            <a class="inline" href="#login01">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#UI設計 #切版 #Xd #Html #Css #JavaScript</div>
-                        <div class="title">TKBGO登入註冊跳窗設計切版</div>
-                    </div>
-                </div>
-                <img src="img/login01.webp" alt="TKBGO登入註冊跳窗設計切版">
-            </a>
-            <a class="inline" href="#paint01">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#吉祥物設計 #Illustrator</div>
-                        <div class="title">TKB日文吉祥物</div>
-                    </div>
-                </div>
-                <img src="img/paint01.webp" alt="TKB日文吉祥物">
-            </a>
-            <a class="inline" href="#banner01">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#Banner設計 #Illustrator</div>
-                        <div class="title">記帳士優惠Banner</div>
-                    </div>
-                </div>
-                <img src="img/banner01.webp" alt="記帳士優惠Banner">
-            </a>
-            <a class="inline" href="#banner02">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#Banner設計 #Illustrator</div>
-                        <div class="title">銀行招考直播Banner</div>
-                    </div>
-                </div>
-                <img src="img/banner02.webp" alt="銀行招考直播Banner">
-            </a>
-            <a class="inline" href="#banner03">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#圖說設計 #Illustrator</div>
-                        <div class="title">高中升學路徑說明圖</div>
-                    </div>
-                </div>
-                <img src="img/banner03.webp" alt="高中升學路徑說明圖">
-            </a>
-            <a class="inline" href="#banner04">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#圖說設計 #Illustrator</div>
-                        <div class="title">前端必修課程封面圖</div>
-                    </div>
-                </div>
-                <img src="img/banner04.webp" alt="前端必修課程封面圖">
-            </a>
-            <a href="https://www.tkbgo.com.tw/go_edm/edm665/index.jsp" target="_blank">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#UI設計 #切版 #Photoshop #Figma #Html #Css #JavaScript</div>
-                        <div class="title">高中段考守護神詳細頁設計切版</div>
-                    </div>
-                </div>
-                <img src="img/edm02-th.webp" alt="高中段考守護神詳細頁設計切版">
-            </a>
-            <a href="https://www.tkbgo.com.tw/go_edm/edm215/index.jsp" target="_blank">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#UI設計 #切版 #Illustrator #Figma #Html #Css #JavaScript</div>
-                        <div class="title">外交官特考詳細頁設計切版</div>
-                    </div>
-                </div>
-                <img src="img/edm03-th.webp" alt="外交官特考詳細頁設計切版">
-            </a>
-            <a class="inline" href="#edm04" target="_blank">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#UI設計 #Illustrator #Xd</div>
-                        <div class="title">學習歷程檔案詳細頁設計</div>
-                    </div>
-                </div>
-                <img src="img/edm04-th.webp" alt="學習歷程檔案詳細頁設計">
-            </a>
-            <a class="inline" href="https://www.tkbgo.com.tw/go_edm/edm220/index.jsp">
-                <div class="hover">
-                    <div class="content">
-                        <div class="hashtag">#UI設計 #切版 #Illustrator #Figma #Html #Css #JavaScript</div>
-                        <div class="title">上榜頂大詳細頁設計切版</div>
-                    </div>
-                </div>
-                <img src="img/edm01-th.webp" alt="上榜頂大詳細頁設計切版">
-            </a>
-
-        </div> -->
-
-        <button id="moreBtn">Load More</button>
-
-    </div>
-    <div style="display: none;">
-        <div id="dm01" class="inlineContent">
-            <img src="img/dm01-1.webp" alt="">
-            <br>
-            <img src="img/dm01-2.webp" alt="">
-        </div>
-        <div id="dm03" class="inlineContent">
-            <img src="img/dm03.webp" alt="">
-        </div>
-        <div id="edm04" class="inlineContent">
-            <img src="img/edm04.webp" alt="">
-        </div>
-        <div id="logo01" class="inlineContent">
-            <img src="img/logo01.webp" alt="">
-        </div>
-        <div id="login01" class="inlineContent">
-            <img src="img/login01.webp" alt="">
-            <img src="img/login02.webp" alt="">
-            <img src="img/login03.webp" alt="">
-            <img src="img/login04.webp" alt="">
-        </div>
-        <div id="paint01" class="inlineContent">
-            <img src="img/paint01.webp" alt="">
-        </div>
-        <div id="banner01" class="inlineContent">
-            <img src="img/banner01.webp" alt="">
-        </div>
-        <div id="banner02" class="inlineContent">
-            <img src="img/banner02.webp" alt="">
-        </div>
-        <div id="banner03" class="inlineContent">
-            <img src="img/banner03.webp" alt="">
-        </div>
-        <div id="banner04" class="inlineContent">
-            <img src="img/banner04.webp" alt="">
-        </div>
-    </div>
-    <div id="aboutTabContent" class="container tabContent" style="display: none;">
-        <div class="about">
-            <div class="col">
-
-                <div class="aboutImg">
-                    <img src="./img/portfolioimg.webp" alt="">
-                </div>
-                <div class="d-flex mt-5">
-                    <div class="aboutTitle col px-0">
-                        <label>NAME</label>
-                        <p>陳香均</p>
-                    </div>
-        
-                    <div class="aboutTitle col px-0">
-                        <label>EMAIL</label>
-                        <p>so8151@gmail.com</p>
-                    </div>
-                </div>
-
-                <label>SKILL</label>
-                <div class="d-flex">
-                    <div class="aboutTitle col px-0">
-                        <ul>
-                            <li>Illustrator</li>
-                            <li>Photoshop</li>
-                            <li>Indesign</li>
-                            <li>Xd</li>
-                            <li>Figma</li>
-                        </ul>
-                    </div>
-                    <div class="aboutTitle col px-0">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-
-                </div>
-
+    <div class="wrapper">
+        <div id="header">
     
-                <div class="aboutTitle">
-                    <label>Education</label>
-                    <p class="school">德明財經科技大學(進修部) 多媒體設計系｜2010/9~2014/6</p>
+        </div>
+        <div class="mainContent">
+            <div id="allTabContent" class="container tabContent">
+                
+                <div id="sBar" class="sBar" style="display: none;">
+                    <input class="searchBar" type="text">
                 </div>
-    
-                <div class="aboutTitle">
-                    <label>Qualifications</label>
-                    <div class="quas">
-                        <p class="jobTitle">台灣知識庫股份有限公司 網頁設計師｜2020/4~2022/6</p>
-                        <!-- 工作內容： -->
-                        <ol>
-                            <li>官網子網頁之UI設計、切版</li>
-                            <li>活動banner及GDN等素材設計</li>
-                            <li>平面印刷教材封面/DM設計</li>
-                            <li>維護更新網頁</li>
-                            <li>官網子品牌之插畫設計</li>
-                        </ol>
-                    </div>
-                    <div class="quas">
-                        <p class="jobTitle">垂克科技股份有限公司 視覺設計｜2019/6~2020/2</p>
-                        <!-- 工作內容： -->
-                        <ol>
-                            <li>展覽活動背景設計</li>
-                            <li>官網及臉書行銷橫幅設計</li>
-                            <li>產品說明頁圖片設計</li>
-                            <li>參與App UI更新及設計</li>
-                            <li>官網wordpress編排</li>
-                            <li>系統後台UI設計</li>
-                        </ol>
-                    </div>
+                <div id="sBtn" class="sBtn">
+                    <button id="allBtn" class="sBtnItem active">ALL</button>
+                    <button class="sBtnItem">文宣設計</button>
+                    <button class="sBtnItem">Logo設計</button>
+                    <button class="sBtnItem">UI設計</button>
+                    <button class="sBtnItem">Banner設計</button>
+                    <button class="sBtnItem">插畫設計</button>
+                    <button class="sBtnItem">圖說設計</button>
                 </div>
-                <!-- <div class="aboutDetail">
-                    <p>網頁設計師</p>
-                    <p>台灣知識庫股份有限公司</p>
-                    <p>
-                        工作內容：
-                        <ol>
-                            <li>官網子網頁之UI設計、切版</li>
-                            <li>活動banner及GDN等素材設計</li>
-                            <li>平面印刷教材封面/DM設計</li>
-                            <li>維護更新網頁</li>
-                            <li>官網子品牌之插畫設計</li>
-                        </ol>
-                    </p>
-                    <p>#Illustrator #Photoshop #HTML #CSS #JavaScript #視覺設計相關知識</p>
+                <div class="blockList">
+                    
+                </div>
+        
+                <button id="moreBtn">Load More</button>
+        
+            </div>
+            <div style="display: none;">
+                <div id="dm01" class="inlineContent">
+                    <img src="img/dm01-1.webp" alt="">
+                    <br>
+                    <img src="img/dm01-2.webp" alt="">
+                </div>
+                <div id="dm03" class="inlineContent">
+                    <img src="img/dm03.webp" alt="">
+                </div>
+                <div id="edm04" class="inlineContent">
+                    <img src="img/edm04.webp" alt="">
+                </div>
+                <div id="logo03" class="inlineContent">
+                    <img src="img/logo03.webp" alt="">
+                </div>
+                <!-- <div id="logo04" class="inlineContent">
+                    <img src="img/logo04.webp" alt="">
                 </div> -->
+                <div id="login01" class="inlineContent">
+                    <img src="img/login01.webp" alt="">
+                    <img src="img/login02.webp" alt="">
+                    <img src="img/login03.webp" alt="">
+                    <img src="img/login04.webp" alt="">
+                </div>
+                <div id="member01" class="inlineContent">
+                    <img src="img/member01.webp" alt="">
+                    <img src="img/member02.webp" alt="">
+                    <!-- <img src="img/member03.webp" alt=""> -->
+                </div>
+                <div id="login05" class="inlineContent">
+                    <img src="img/login05.webp" alt="">
+                </div>
+                <div id="paint01" class="inlineContent">
+                    <img src="img/paint01.webp" alt="">
+                </div>
+                <div id="paint02" class="inlineContent">
+                    <img src="img/paint02.webp" alt="">
+                </div>
+                <div id="paint03" class="inlineContent">
+                    <img src="img/paint03.webp" alt="">
+                </div>
+                <div id="banner01" class="inlineContent">
+                    <img src="img/banner01.webp" alt="">
+                </div>
+                <div id="banner02" class="inlineContent">
+                    <img src="img/banner02.webp" alt="">
+                </div>
+                <div id="banner03" class="inlineContent">
+                    <img src="img/banner03.webp" alt="">
+                </div>
+                <div id="banner04" class="inlineContent">
+                    <img src="img/banner04.webp" alt="">
+                </div>
             </div>
-    
-            <div class="col">
-                <div class="aboutTitle">
-                    <label>Autobiography</label>
+            <div id="aboutTabContent" class="container tabContent" style="display: none;">
+                <div class="about">
+                    <div class="col-12 col-md-5 mr-md-auto">
+        
+                        <div class="aboutImg">
+                            <img src="./img/portfolioimg.webp" alt="">
+                        </div>
+                        <div class="d-flex mt-5">
+                            <div class="aboutTitle col px-0">
+                                <label>NAME</label>
+                                <p>陳香均</p>
+                            </div>
+                
+                            <div class="aboutTitle col px-0">
+                                <label>EMAIL</label>
+                                <p>so8151@gmail.com</p>
+                            </div>
+                        </div>
+        
+                        <label>SKILL</label>
+                        <div class="d-flex">
+                            <div class="aboutTitle col px-0">
+                                <ul>
+                                    <li>Illustrator</li>
+                                    <li>Photoshop</li>
+                                    <li>Indesign</li>
+                                    <li>Xd</li>
+                                    <li>Figma</li>
+                                </ul>
+                            </div>
+                            <div class="aboutTitle col px-0">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+            
+                        <div class="aboutTitle">
+                            <label>Education</label>
+                            <p class="school">德明財經科技大學(進修部) 多媒體設計系｜2010/9~2014/6</p>
+                        </div>
+            
+                        <div class="aboutTitle">
+                            <label>Qualifications</label>
+                            <div class="quas">
+                                <p class="jobTitle">台灣知識庫股份有限公司 網頁設計師｜2020/4~2022/6</p>
+                                <!-- 工作內容： -->
+                                <ol>
+                                    <li>官網子網頁之UI設計、切版</li>
+                                    <li>活動banner及GDN等素材設計</li>
+                                    <li>平面印刷教材封面/DM設計</li>
+                                    <li>維護更新網頁</li>
+                                    <li>官網子品牌之插畫設計</li>
+                                </ol>
+                            </div>
+                            <div class="quas">
+                                <p class="jobTitle">垂克科技股份有限公司 視覺設計｜2019/6~2020/2</p>
+                                <!-- 工作內容： -->
+                                <ol>
+                                    <li>展覽活動背景設計</li>
+                                    <li>官網及臉書行銷橫幅設計</li>
+                                    <li>產品說明頁圖片設計</li>
+                                    <li>參與App UI更新及設計</li>
+                                    <li>官網wordpress編排</li>
+                                    <li>系統後台UI設計</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- <div class="aboutDetail">
+                            <p>網頁設計師</p>
+                            <p>台灣知識庫股份有限公司</p>
+                            <p>
+                                工作內容：
+                                <ol>
+                                    <li>官網子網頁之UI設計、切版</li>
+                                    <li>活動banner及GDN等素材設計</li>
+                                    <li>平面印刷教材封面/DM設計</li>
+                                    <li>維護更新網頁</li>
+                                    <li>官網子品牌之插畫設計</li>
+                                </ol>
+                            </p>
+                            <p>#Illustrator #Photoshop #HTML #CSS #JavaScript #視覺設計相關知識</p>
+                        </div> -->
+                    </div>
+            
+                    <div class="col-12 col-md-6">
+                        <div class="aboutTitle">
+                            <label>Autobiography</label>
+                        </div>
+                        <div class="aboutDetail">
+                            <p>我出生於1992年，畢業於德明財經科技大學-多媒體設計系，因家中經濟關係，父母期許我們能獨立自主，高職便開始就讀夜校以半工半讀的方式完成學業；個性開朗，自認工作適應能力快速、喜愛瀏覽新的資訊、自我進修，平時工作態度積極、學習快速，有兩年的網頁設計經歷以及五年的電子商務廣告設計經歷！</p>
+                
+                            <p>由於自小對藝術設計有興趣，雖然高職時沒有就讀設計相關科系，有時間便會自學設計相關軟體，現階段也是不斷精進自己的設計能力及軟體操作、自學或是觀看線上課程持續進修，目前持續學習的主要課程為JavaScript。 </p>
+                
+                            <p>前一份工作就職於補教業的電子商務部門，擔任維護線上課程網頁及設計，負責的項目有官網子網頁的UI設計及切版、課程教材封面設計、實體宣傳DM設計、線上banner及GDN設計等，UI設計有使用Adobe XD、Figma，平面設計會用到Photoshop修圖、Illustrator繪圖進行主視覺設計及插畫設計、Indesign排版頁碼較少的手冊、網頁切版則是習慣使用VS Code進行。</p>
+                
+                            <p>曾任職於電子業擔任視覺設計，負責公司參展之海報背景設計、官網商品詳細圖設計及Facebook行銷等素材的拍攝及製作；有簡易使用wordpress編排官網之經驗，也因公司有製作app及系統前後台的關係，有參與設計網頁系統後台編寫，以及app更新繪製UI介面設計。</p>
+                
+                            <p>過往曾於網路女裝/女包品牌擔任美術編輯，製作新品及行銷Banner、廣告素材、編輯HTML更新商城首頁及發送EDM的部分，工作時能準確的達到主管希望的風格及符合流行女裝更新快速的頻率；也有參與協助棚拍的會議及現場model情境照協助拍攝，從中也學到了很多廣告素材、棚拍、型錄之經驗。 </p>
+                
+                            <p>期許自己能在這個資訊進步的世界，精進自身能力並有所突破！</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="aboutDetail">
-                    <p>我出生於1992年，畢業於德明財經科技大學-多媒體設計系，因家中經濟關係，父母期許我們能獨立自主，高職便開始就讀夜校以半工半讀的方式完成學業；個性開朗，自認工作適應能力快速、喜愛瀏覽新的資訊、自我進修，平時工作態度積極、學習快速，有兩年的網頁設計經歷以及五年的電子商務廣告設計經歷！</p>
+                
         
-                    <p>由於自小對藝術設計有興趣，雖然高職時沒有就讀設計相關科系，有時間便會自學設計相關軟體，現階段也是不斷精進自己的設計能力及軟體操作、自學或是觀看線上課程持續進修，目前持續學習的主要課程為JavaScript。 </p>
         
-                    <p>前一份工作就職於補教業的電子商務部門，擔任維護線上課程網頁及設計，負責的項目有官網子網頁的UI設計及切版、課程教材封面設計、實體宣傳DM設計、線上banner及GDN設計等，UI設計有使用Adobe XD、Figma，平面設計會用到Photoshop修圖、Illustrator繪圖進行主視覺設計及插畫設計、Indesign排版頁碼較少的手冊、網頁切版則是習慣使用VS Code進行。</p>
         
-                    <p>曾任職於電子業擔任視覺設計，負責公司參展之海報背景設計、官網商品詳細圖設計及Facebook行銷等素材的拍攝及製作；有簡易使用wordpress編排官網之經驗，也因公司有製作app及系統前後台的關係，有參與設計網頁系統後台編寫，以及app更新繪製UI介面設計。</p>
-        
-                    <p>過往曾於網路女裝/女包品牌擔任美術編輯，製作新品及行銷Banner、廣告素材、編輯HTML更新商城首頁及發送EDM的部分，工作時能準確的達到主管希望的風格及符合流行女裝更新快速的頻率；也有參與協助棚拍的會議及現場model情境照協助拍攝，從中也學到了很多廣告素材、棚拍、型錄之經驗。 </p>
-        
-                    <p>期許自己能在這個資訊進步的世界，精進自身能力並有所突破！</p>
-                </div>
             </div>
         </div>
-        
-
-
-
-    </div>
-    <!-- <div class="container">
-        
-        <div class="block1 row my-5">
-            <div class="col-12 col-md-4 text-center">
-                <div class="pointItem">
-                    <div class="pic">
-                        <img src="img/Artboard 1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="pointItem">
-                    <div class="pic">
-                        <img src="img/01.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="pointItem">
-                    <div class="pic">
-                        <img src="img/logo01.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="pointItem">
-                    <div class="pic">
-                        <img src="img/edm02.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="pointItem">
-                    <div class="pic">
-                        <img src="img/edm215.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="pointItem">
-                    <div class="pic">
-                        <img src="img/login01.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="pointItem">
-                    <div class="pic">
-                        <img src="img/system01.png" alt="">
-                    </div>
-                </div>
-            </div>
+        <div id="footer">
         </div>
-
-    </div> -->
-    <div id="footer">
     </div>
+
+
+    <!-- lightbox跳窗內頁、用搜尋寫篩選、圖片調整mockup、AOS、lazyload圖片大小加載速度、比例 -->
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

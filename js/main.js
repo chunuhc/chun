@@ -85,7 +85,7 @@ $(document).ready(function () {
         hashtag: ['文宣設計', 'Illustrator', 'Photoshop'],
         title: '記帳士手冊封面',
         href: '#dm03',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/dm03.webp'
       },
@@ -93,7 +93,7 @@ $(document).ready(function () {
         hashtag: ['文宣設計', 'Illustrator'],
         title: '文化行政傳單DM',
         href: '#dm01',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/dm01-1.webp'
       }
@@ -102,21 +102,21 @@ $(document).ready(function () {
       {
         hashtag: ['Logo設計', 'Illustrator'],
         title: 'DoWell Logo',
-        href: '#logo01',
-        classN: 'inline',
+        href: '#logo03',
+        classN: 'inline cboxElement',
         target: '',
-        src: 'img/logo01.webp'
+        src: 'img/logo03.webp'
+      },
+      {
+        hashtag: ['Logo設計', 'Illustrator'],
+        title: 'VICVIN Logo',
+        href: 'img/logo04pdf.pdf',
+        classN: '',
+        target: '_blank',
+        src: 'img/logo04.webp'
       }
     ],
     "UI設計": [
-      {
-        hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
-        title: 'TKBGO登入註冊跳窗設計切版',
-        href: '#login01',
-        classN: 'inline',
-        target: '',
-        src: 'img/login01.webp'
-      },
       {
         hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
         title: '高中段考守護神詳細頁設計切版',
@@ -145,17 +145,41 @@ $(document).ready(function () {
         hashtag: ['UI設計','Illustrator', 'Xd'],
         title: '學習歷程檔案詳細頁設計',
         href: '#edm04',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/edm04-th.webp'
-      }
+      },
+      {
+        hashtag: ['UI設計', '切版', 'Figma', 'Html', 'Css', 'JavaScript'] ,
+        title: 'TKBGO會員專區設計切版',
+        href: '#member01',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/member01.webp'
+      },
+      {
+        hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
+        title: 'TKBGO登入註冊跳窗設計切版',
+        href: '#login01',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/login01.webp'
+      },
+      {
+        hashtag: ['UI設計', 'Xd'] ,
+        title: 'ICAR登入設計',
+        href: '#login05',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/login05.webp'
+      },
     ],
     "Banner設計": [
       {
         hashtag: ['Banner設計','Illustrator'],
         title: '記帳士優惠Banner',
         href: '#banner01',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/banner01.webp'
       },
@@ -163,19 +187,35 @@ $(document).ready(function () {
         hashtag: ['Banner設計','Illustrator'],
         title: '銀行招考直播Banner',
         href: '#banner02',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/banner02.webp'
       }
     ],
-    "吉祥物設計": [
+    "插畫設計": [
       {
-        hashtag: ['吉祥物設計','Illustrator'],
-        title: 'TKB日文吉祥物',
+        hashtag: ['插畫設計','Illustrator'],
+        title: 'TKB日文柴犬',
         href: '#paint01',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/paint01.webp'
+      },
+      {
+        hashtag: ['插畫設計','MediBang'],
+        title: '博美犬插畫練習',
+        href: '#paint02',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/paint02.webp'
+      },
+      {
+        hashtag: ['插畫設計','Illustrator'],
+        title: '米克斯插畫練習',
+        href: '#paint03',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/paint03.webp'
       }
     ],
     "圖說設計": [
@@ -183,7 +223,7 @@ $(document).ready(function () {
         hashtag: ['圖說設計','Illustrator'],
         title: '高中升學路徑說明圖',
         href: '#banner03',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/banner03.webp'
       },
@@ -191,7 +231,7 @@ $(document).ready(function () {
         hashtag: ['圖說設計','Illustrator'],
         title: '前端必修課程封面圖',
         href: '#banner04',
-        classN: 'inline',
+        classN: 'inline cboxElement',
         target: '',
         src: 'img/banner04.webp'
       }

@@ -425,6 +425,10 @@ ul.navBar {
         img {
             max-width: 100%;
         }
+        img.lazyload {
+            width: 100%;
+            height: 100%;
+        }
         .hover {
             opacity: 0;
             transition: opacity 0.15s ease;

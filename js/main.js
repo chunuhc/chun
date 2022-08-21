@@ -314,7 +314,7 @@ $(document).ready(function () {
         html += '<div class="hover"><div class="content">'
         html += '<div class="hashtag">'+str.hashtag+'</div>'
         html += '<div class="title">'+str.title+'</div></div></div>'
-        html += '<img src="'+str.src+'" alt="'+str.title+'"></a>'
+        html += '<img class="lazyload" src="img/lazy.webp" data-src="'+str.src+'" alt="'+str.title+'"></a>'
       }
   
     }
@@ -360,7 +360,7 @@ $(document).ready(function () {
       html += '<div class="hover"><div class="content">'
       html += '<div class="hashtag">'+sArr[i].hashtag+'</div>'
       html += '<div class="title">'+sArr[i].title+'</div></div></div>'
-      html += '<img src="'+sArr[i].src+'" alt="'+sArr[i].title+'"></a>'
+      html += '<img class="lazyload" src="img/lazy.webp" data-src="'+sArr[i].src+'" alt="'+sArr[i].title+'"></a>'
     }
       // console.log('1 '+sContent);
       sContent.html(html);

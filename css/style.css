@@ -7577,6 +7577,11 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   max-width: 100%;
 }
 
+.blockList > a img.lazyload {
+  width: 100%;
+  height: 100%;
+}
+
 .blockList > a .hover {
   opacity: 0;
   transition: opacity 0.15s ease;

@@ -303,6 +303,15 @@ $(document).ready(function () {
       scalePhotos: true,
       photo: true
     });
+
+    $(".inline").colorbox({
+      onOpen: function(){
+        $('body').css({ overflow: 'hidden' });
+      },
+      onClosed: function(){
+        $('body').css({ overflow: '' });
+      }
+    });
     
   }
 
@@ -464,6 +473,16 @@ $(document).ready(function () {
     scalePhotos: true,
     photo: true
   });
+  $(".inline").colorbox({
+    onOpen: function(){
+      $('body').css({ overflow: 'hidden' });
+    },
+    onClosed: function(){
+       $('body').css({ overflow: '' });
+    }
+  });
+  
+
   // $(".callbacks").colorbox({
   //     onOpen:function(){ alert('onOpen: colorbox is about to open'); },
   //     onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },

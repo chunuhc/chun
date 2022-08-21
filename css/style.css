@@ -7506,12 +7506,6 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   text-align: center;
 }
 
-@media (max-width: 575px) {
-  #aboutTabContent {
-    top: 158px;
-  }
-}
-
 .sBar {
   margin: 2em 0;
 }

@@ -296,7 +296,13 @@ $(document).ready(function () {
     sContent.html(html);
     loadMore(sArr.length);
 
-    $(".inline").colorbox({inline: true, width: "50%"});
+    $(".inline").colorbox({
+      inline: true, 
+      maxWidth: '720px',
+      maxHeight: '95%',
+      scalePhotos: true,
+      photo: true
+    });
     
   }
 
@@ -324,7 +330,13 @@ $(document).ready(function () {
 
       loadMore(sArr.length);
 
-      $(".inline").colorbox({inline: true, width: "50%"});
+      $(".inline").colorbox({
+        inline: true, 
+        maxWidth: '720px',
+        maxHeight: '95%', 
+        scalePhotos: true,
+        photo: true
+      });
       
   }
   // for迴圈不能使用匿名函示
@@ -444,7 +456,14 @@ $(document).ready(function () {
   // $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
   // $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
   // $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-  $(".inline").colorbox({inline:true, width:"50%"});
+
+  $(".inline").colorbox({
+    inline: true, 
+    maxWidth: '720px',
+    maxHeight: '95%',
+    scalePhotos: true,
+    photo: true
+  });
   // $(".callbacks").colorbox({
   //     onOpen:function(){ alert('onOpen: colorbox is about to open'); },
   //     onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },

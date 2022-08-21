@@ -7293,9 +7293,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #dfdad3;
-  height: 100%;
 }
 
 #header {
@@ -7369,6 +7372,7 @@ body {
 
 .mainContent {
   min-height: 100%;
+  padding-bottom: 50px;
 }
 
 ul.navBar {
@@ -7473,8 +7477,6 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   color: #8C6833;
   align-items: center;
   font-size: 12px;
-  position: relative;
-  top: -100px;
   height: 50px;
 }
 
@@ -7489,20 +7491,19 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 
 .tabContent {
   transition: all 0.5s linear;
-  margin-top: 24px;
-  padding-bottom: 8em;
+  margin-top: 2em;
   position: relative;
   top: 0;
 }
 
-#allTabContent {
-  text-align: center;
+@media (max-width: 575px) {
+  .tabContent {
+    margin-top: 1em;
+  }
 }
 
-@media (max-width: 575px) {
-  #allTabContent {
-    top: 158px;
-  }
+#allTabContent {
+  text-align: center;
 }
 
 @media (max-width: 575px) {
@@ -7519,15 +7520,30 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   outline: none;
 }
 
+.sBtn {
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  line-height: 28px;
+}
+
+@media (max-width: 575px) {
+  .sBtn {
+    margin-bottom: 1em;
+  }
+}
+
 .sBtn button {
   color: #fff;
   background-color: #d6ba8d;
-  margin-bottom: 2em;
   border: 0;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   padding: 4px 16px;
+  margin: 4px;
 }
 
 .sBtn button:hover {
@@ -7540,12 +7556,6 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 
 .sBtn button.active {
   background-color: #c7aa7c;
-}
-
-@media (max-width: 575px) {
-  .sBtn button {
-    margin-bottom: 1em;
-  }
 }
 
 .blockList {
@@ -7598,13 +7608,19 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 #moreBtn {
   color: #fff;
   background-color: #d6ba8d;
-  margin-top: 4em;
+  margin: 2em 0;
   border: 0;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   padding: 4px 16px;
   box-shadow: 0 2px 0 #fff;
+}
+
+@media (max-width: 575px) {
+  #moreBtn {
+    margin: 1em 0;
+  }
 }
 
 #moreBtn:hover {
@@ -7664,6 +7680,11 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   font-size: 15px;
   color: #6d5757;
   display: inline-block;
+}
+
+.about .aboutTitle .quas ol,
+.about .aboutDetail .quas ol {
+  padding-left: 1em;
 }
 
 .about .aboutTitle .school,

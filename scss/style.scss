@@ -41,10 +41,12 @@
 @import "utilities";
 @import "print";
 
+html, body {
+    height: 100%;
+}
 
 body {
     background-color: rgb(223, 218, 211);
-    height: 100%;
 }
 
 #header {
@@ -114,8 +116,8 @@ body {
 
 .mainContent{
     min-height: 100%;
-    // padding-top: 50px;
-    // padding-bottom: 50px;
+    // padding-top: 128px;
+    padding-bottom: 50px;
 }
 
 ul.navBar {
@@ -300,8 +302,8 @@ ul.navBar {
     // justify-content: space-around;
     font-size: 12px;
 
-    position: relative;
-    top: -100px;
+    // position: relative;
+    // top: -100px;
     height: 50px;
     .email, .phone {
         display: flex;
@@ -319,12 +321,13 @@ ul.navBar {
     // transition: 屬性 持續時間 delay時間 變化函數;
     transition: all 0.5s linear;
     // margin-top: 180px;
-    margin-top: 24px;
-    padding-bottom: 8em;
+    margin-top: 2em;
+    // padding-bottom: 8em;
     position: relative;
     top: 0;
-    @media (min-width: 576px) {
+    @media (max-width: 575px) {
         // margin-top: 156px;
+        margin-top: 1em;
     }
 }
 
@@ -335,9 +338,9 @@ ul.navBar {
     // left: 50%;
     // transform: translateX(-50%);
 
-    @media (max-width: 575px) {
-        top: 158px;
-    }
+    // @media (max-width: 575px) {
+    //     top: 158px;
+    // }
 }
 #aboutTabContent {
     // position: absolute;
@@ -361,15 +364,24 @@ ul.navBar {
 }
 
 .sBtn {
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    line-height: 28px;
+    @media (max-width: 575px) {
+        margin-bottom: 1em;
+    }
     button {
         color: #fff;
         background-color: #d6ba8d;
-        margin-bottom: 2em;
         border: 0;
         border-radius: 8px;
         font-size: 14px;
         font-weight: 600;
         padding: 4px 16px;
+        margin: 4px;
         &:hover {
             background-color: #c7aa7c;
         }
@@ -378,9 +390,6 @@ ul.navBar {
         }
         &.active {
             background-color: #c7aa7c;
-        }
-        @media (max-width: 575px) {
-            margin-bottom: 1em;
         }
     }
 }
@@ -449,13 +458,16 @@ ul.navBar {
 #moreBtn {
     color: #fff;
     background-color: #d6ba8d;
-    margin-top: 4em;
+    margin: 2em 0;
     border: 0;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
     padding: 4px 16px;
     box-shadow: 0 2px 0 #fff;
+    @media (max-width: 575px) {
+        margin: 1em 0;
+    }
     &:hover {
         background-color: #c7aa7c;
         box-shadow: none;
@@ -514,6 +526,9 @@ ul.navBar {
                 font-size: 15px;
                 color: #6d5757;
                 display: inline-block;
+            }
+            ol {
+                padding-left: 1em;
             }
         }
         .school {

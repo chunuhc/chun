@@ -190,6 +190,14 @@ $(document).ready(function () {
         classN: 'inline cboxElement',
         target: '',
         src: 'img/banner02.webp'
+      },
+      {
+        hashtag: ['Banner設計', '插畫設計', 'Illustrator'],
+        title: '歐恩伊聯名商品Facebook廣告',
+        href: '#banner05',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/banner05.webp'
       }
     ],
     "插畫設計": [

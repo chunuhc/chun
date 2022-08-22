@@ -7496,6 +7496,8 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 @media (max-width: 575px) {
   .tabContent {
     margin-top: 1em;
+    padding-right: var(--bs-gutter-x, 1.75rem);
+    padding-left: var(--bs-gutter-x, 1.75rem);
   }
 }
 

@@ -236,6 +236,8 @@ ul.navBar {
     top: 0;
     @media (max-width: 575px) {
         margin-top: 1em;
+        padding-right: var(--bs-gutter-x,1.75rem);
+        padding-left: var(--bs-gutter-x,1.75rem);
     }
 }
 

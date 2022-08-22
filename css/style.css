@@ -7588,6 +7588,10 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   margin: 0 auto;
 }
 
+.blockList > a .hover .hashtag {
+  width: 16em;
+}
+
 .blockList > a .hover .content {
   position: absolute;
   top: 50%;

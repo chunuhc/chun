@@ -325,6 +325,10 @@ ul.navBar {
             top: 0;
             text-align: center;
             margin: 0 auto;
+            .hashtag {
+                // white-space: nowrap;
+                width: 16em;
+            }
             .content {
                 position: absolute;
                 top: 50%;

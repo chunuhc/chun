@@ -118,7 +118,8 @@ $(document).ready(function () {
     ],
     "UI設計切版": [
       {
-        hashtag: ['UI設計', '切版', 'Figma', 'Html', 'Css', 'JavaScript'] ,
+        hashtag: ['UI設計', '切版', 'Figma', '\
+        Html', 'Css', 'JavaScript'] ,
         title: '線上櫃台功能設計切版',
         href: '#counter01',
         classN: 'inline',
@@ -126,7 +127,8 @@ $(document).ready(function () {
         src: 'img/counter01.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
+        hashtag: ['UI設計', '切版', 'Xd', '\
+        Html', 'Css', 'JavaScript'] ,
         title: '高中段考守護神詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
         classN: '',
@@ -134,7 +136,8 @@ $(document).ready(function () {
         src: 'img/edm02-th.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Illustrator', 'Figma', 'Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版', 'Illustrator', '\
+        Figma', 'Html', 'Css', 'JavaScript'],
         title: '外交官特考詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm215/index.jsp',
         classN: '',
@@ -142,7 +145,8 @@ $(document).ready(function () {
         src: 'img/edm03-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator', 'Figma', 'Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計','Illustrator', 'Figma', '\
+        Html', 'Css', 'JavaScript'],
         title: '上榜頂大詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm220/index.jsp',
         classN: '',
@@ -158,7 +162,8 @@ $(document).ready(function () {
         src: 'img/edm04-th.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Figma', 'Html', 'Css', 'JavaScript'] ,
+        hashtag: ['UI設計', '切版', 'Figma', '\
+        Html', 'Css', 'JavaScript'] ,
         title: 'TKBGO會員專區設計切版',
         href: '#member01',
         classN: 'inline cboxElement',
@@ -166,7 +171,8 @@ $(document).ready(function () {
         src: 'img/member01.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
+        hashtag: ['UI設計', '切版', 'Xd', '\
+        Html', 'Css', 'JavaScript'] ,
         title: 'TKBGO登入註冊跳窗設計切版',
         href: '#login01',
         classN: 'inline cboxElement',

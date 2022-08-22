@@ -116,7 +116,7 @@ $(document).ready(function () {
         src: 'img/logo04.webp'
       }
     ],
-    "UI設計": [
+    "UI設計切版": [
       {
         hashtag: ['UI設計', '切版', 'Xd', 'Html', 'Css', 'JavaScript'] ,
         title: '高中段考守護神詳細頁設計切版',

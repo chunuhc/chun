@@ -2,76 +2,55 @@ $(document).ready(function () {
   
 
 
-  ////// --header載入begin--
+  ////// --header/footer載入begin--
 
   // $('#header').load('./header.html');
-
-  var header = document.getElementById('header');
-
-  axios.get('./header.html')
-  .then(function(res) {
-
-      header.innerHTML = res.data;
-
-
-      // 點擊切換分頁
-      $('.tabLink').click(function() {
-        // console.log(123);
-        // console.log($(this).attr('data-href'));
-        var url = $(this).attr('href');
-        
-        $(this).addClass('active')
-        .parent().siblings().find('a').removeClass('active');
-        $(url).siblings('.tabContent').fadeOut(500);
-        $(url).delay(500).fadeTo(500, 1);
-        return false;
-      });
-
-
-
-      // // var li = document.getElementById('slideSource');
-      // var url = $(this).attr('href');
-
-      // document.getElementsByClassName('tabLink').onclick = function () {
-      //   console.log(url);
-        
-      //   url.classList.toggle('fade');
-      //   return false;
-      // }
-
-      // 預設值
-      function resetFun() {
-        $('#allTab').addClass('active')
-        .parent().siblings().find('a').removeClass('active');
-        $('#allTabContent').fadeIn(500)
-          .siblings('.tabContent').fadeOut(500);
-          return false;
-          console.log('reset');
-          
-      };
-
-      resetFun();
-      
-
-  })
-
-
-  ////// --header載入end--
-
-
-
-  ////// --footer載入begin--
-
   // $('#footer').load('./footer.html');
- 
-  var footer = document.getElementById('footer');
 
-  axios.get('./footer.html')
-  .then(function(res) {
-    footer.innerHTML = res.data;
-  })
+  var headerDom = document.getElementById('header');
+  var footerDom = document.getElementById('footer');
 
-  ////// footer載入end
+  function headerData() {
+    return axios.get('./header.html');
+  }
+
+  function footerData() {
+    return axios.get('./footer.html');
+  }
+
+  axios.all([headerData(), footerData()])
+  .then(axios.spread(function (header, footer) {
+    
+    headerDom.innerHTML = header.data;
+    footerDom.innerHTML = footer.data;
+    
+    // 點擊切換分頁
+    $('.tabLink').click(function() {
+      // console.log(123);
+      // console.log($(this).attr('data-href'));
+      var url = $(this).attr('href');
+      
+      $(this).addClass('active')
+      .parent().siblings().find('a').removeClass('active');
+      $(url).siblings('.tabContent').fadeOut(500);
+      $(url).delay(500).fadeTo(500, 1);
+      return false;
+    });
+
+    // 預設值
+    function resetFun() {
+      $('#allTab').addClass('active')
+      .parent().siblings().find('a').removeClass('active');
+      $('#allTabContent').fadeIn(500)
+        .siblings('.tabContent').fadeOut(500);
+        return false;
+        console.log('reset');
+        
+    };
+
+  }));
+
+  ////// header/footer載入end
 
 
 

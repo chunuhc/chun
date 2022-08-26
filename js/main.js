@@ -420,13 +420,13 @@ $(document).ready(function () {
     // console.log(count);
     
 
-    if(count <= 5) {
+    if(count <= 6) {
       $("#moreBtn").text("No More").addClass("null");
     } else {
       $("#moreBtn").text("Load More").removeClass("null");
     }
 
-    $('.blockList a').slice(0, 5).css('display', 'block');
+    $('.blockList a').slice(0, 6).css('display', 'block');
     
     $('#moreBtn').click(function() {
   

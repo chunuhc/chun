@@ -267,15 +267,16 @@ $(document).ready(function () {
   var html = '';
   // var sBlock = $('.block')[0];
 
+  // for迴圈不能使用匿名函示
   for(var s = 0; s < sTag.length; s++) {
 
     sTag[s].addEventListener('click', function() {
 
       if(this.id !== 'allBtn') {
-        console.log('no');
+        // console.log('no');
         tagSearch(this.innerText);
       } else {
-        console.log('yes');
+        // console.log('yes');
         allBlock();
       }
       // console.log(this);
@@ -332,7 +333,7 @@ $(document).ready(function () {
   allBlock();
 
   
-
+  // 按下標籤搜尋顯示
   function tagSearch(sText) {
 
     html = '';
@@ -362,7 +363,6 @@ $(document).ready(function () {
       });
       
   }
-  // for迴圈不能使用匿名函示
 
   var keyword = '';
   var sHtml = '';

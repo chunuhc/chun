@@ -80,42 +80,6 @@ $(document).ready(function () {
   ////// --搜尋 begin--
 
   var pContent = {
-    "文宣設計": [
-      {
-        hashtag: ['文宣設計', 'Illustrator', 'Photoshop'],
-        title: '記帳士手冊封面',
-        href: '#dm03',
-        classN: 'inline cboxElement',
-        target: '',
-        src: 'img/dm03.webp'
-      },
-      {
-        hashtag: ['文宣設計', 'Illustrator'],
-        title: '文化行政傳單DM',
-        href: '#dm01',
-        classN: 'inline cboxElement',
-        target: '',
-        src: 'img/dm01-1.webp'
-      }
-    ],
-    "Logo設計": [
-      {
-        hashtag: ['Logo設計', 'Illustrator'],
-        title: 'DoWell Logo',
-        href: '#logo03',
-        classN: 'inline cboxElement',
-        target: '',
-        src: 'img/logo03.webp'
-      },
-      {
-        hashtag: ['Logo設計', 'Illustrator'],
-        title: 'VICVIN Logo',
-        href: 'img/logo04pdf.pdf',
-        classN: '',
-        target: '_blank',
-        src: 'img/logo04.webp'
-      }
-    ],
     "UI設計切版": [
       {
         hashtag: ['UI設計', '切版', 'Figma', '\
@@ -188,6 +152,24 @@ $(document).ready(function () {
         src: 'img/login05.webp'
       },
     ],
+    "文宣設計": [
+      {
+        hashtag: ['文宣設計', 'Illustrator', 'Photoshop'],
+        title: '記帳士手冊封面',
+        href: '#dm03',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/dm03.webp'
+      },
+      {
+        hashtag: ['文宣設計', 'Illustrator'],
+        title: '文化行政傳單DM',
+        href: '#dm01',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/dm01-1.webp'
+      }
+    ],
     "Banner設計": [
       {
         hashtag: ['Banner設計','Illustrator'],
@@ -212,6 +194,42 @@ $(document).ready(function () {
         classN: 'inline cboxElement',
         target: '',
         src: 'img/banner05.webp'
+      }
+    ],
+    "圖說設計": [
+      {
+        hashtag: ['圖說設計','Illustrator'],
+        title: '高中升學路徑說明圖',
+        href: '#banner03',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/banner03.webp'
+      },
+      {
+        hashtag: ['圖說設計','Illustrator'],
+        title: '前端必修課程封面圖',
+        href: '#banner04',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/banner04.webp'
+      }
+    ],
+    "Logo設計": [
+      {
+        hashtag: ['Logo設計', 'Illustrator'],
+        title: 'DoWell Logo',
+        href: '#logo03',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/logo03.webp'
+      },
+      {
+        hashtag: ['Logo設計', 'Illustrator'],
+        title: 'VICVIN Logo',
+        href: 'img/logo04pdf.pdf',
+        classN: '',
+        target: '_blank',
+        src: 'img/logo04.webp'
       }
     ],
     "插畫設計": [
@@ -239,33 +257,15 @@ $(document).ready(function () {
         target: '',
         src: 'img/paint03.webp'
       }
-    ],
-    "圖說設計": [
-      {
-        hashtag: ['圖說設計','Illustrator'],
-        title: '高中升學路徑說明圖',
-        href: '#banner03',
-        classN: 'inline cboxElement',
-        target: '',
-        src: 'img/banner03.webp'
-      },
-      {
-        hashtag: ['圖說設計','Illustrator'],
-        title: '前端必修課程封面圖',
-        href: '#banner04',
-        classN: 'inline cboxElement',
-        target: '',
-        src: 'img/banner04.webp'
-      }
     ]
   }
 
   var searchBar = $('.searchBar:text');
-  var sContent = $('.blockList');
+  var sBlock = $('.blockList');
   var sTag = $('#sBtn button');
   var sArr = [];
   var html = '';
-  // var sContent = $('.block')[0];
+  // var sBlock = $('.block')[0];
 
   for(var s = 0; s < sTag.length; s++) {
 
@@ -290,7 +290,7 @@ $(document).ready(function () {
   function allBlock() {
 
     html = '';
-    sContent.html(html);
+    sBlock.html(html);
 
     sArr =  Object.entries(pContent);
     
@@ -307,7 +307,7 @@ $(document).ready(function () {
       }
   
     }
-    sContent.html(html);
+    sBlock.html(html);
     loadMore(sArr.length);
 
     $(".inline").colorbox({
@@ -336,7 +336,7 @@ $(document).ready(function () {
   function tagSearch(sText) {
 
     html = '';
-    sContent.html(html);
+    sBlock.html(html);
     sArr = pContent[sText];
     
     
@@ -347,9 +347,9 @@ $(document).ready(function () {
       html += '<div class="title">'+sArr[i].title+'</div></div></div>'
       html += '<img class="lazyload" src="img/lazy.svg" data-src="'+sArr[i].src+'" alt="'+sArr[i].title+'"></a>'
     }
-      // console.log('1 '+sContent);
-      sContent.html(html);
-      // console.log(sContent);
+      // console.log('1 '+sBlock);
+      sBlock.html(html);
+      // console.log(sBlock);
 
       loadMore(sArr.length);
 
@@ -369,7 +369,7 @@ $(document).ready(function () {
 
   // function DomRender() {
   //   html = '';
-  //   sContent.innerHTML = '';
+  //   sBlock.innerHTML = '';
   //   for(i = 0; i < pContent.length; i++) {
   //     html += '<a class="'+pContent[i].class+'" href="'+pContent[i].href+'">'
   //     html += '<div class="hover"><div class="content">'
@@ -378,7 +378,7 @@ $(document).ready(function () {
   //     html += '<img src="'+pContent[i].src+'" alt="'+pContent[i].title+'"></a>'
   //   }
 
-  //   sContent.innerHTML = html;
+  //   sBlock.innerHTML = html;
   // }
   // DomRender();
 

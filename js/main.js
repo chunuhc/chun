@@ -284,6 +284,18 @@ $(document).ready(function () {
         html += '<div class="hashtag">'+str.hashtag+'</div>'
         html += '<div class="title">'+str.title+'</div></div></div>'
         html += '<img class="lazyload" src="img/lazy.svg" data-src="'+str.src+'" alt="'+str.title+'"></a>'
+        // str = sArr[i][1][j];
+        // var html = `
+        //   <a class="${str.classN}" href'"${str.href}" target="${str.target}" data-aos="fade-right">
+        //     <div class="hover">
+        //       <div class="content">
+        //         <div class="hashtag">${str.hashtag}</div>
+        //         <div class="title">${str.title}</div>
+        //       </div>
+        //     </div>
+        //     <img class="lazyload" src="img/lazy.svg" data-src="${str.src}" alt="${str.title}">
+        //   </a>
+        // `
       }
   
     }
@@ -405,10 +417,11 @@ $(document).ready(function () {
       $("#moreBtn").text("Load More").removeClass("null");
     }
 
+    // 顯示前六個
     $('.blockList a').slice(0, 6).css('display', 'block');
     
+    // 按下更多再載入四個
     $('#moreBtn').click(function() {
-  
         $('.blockList a:hidden').slice(0, 4).css('display', 'block');
         if($(".blockList a:hidden").length == 0) {
           $("#moreBtn").text("No More").addClass("null");

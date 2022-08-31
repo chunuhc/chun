@@ -417,13 +417,6 @@ $(document).ready(function () {
       $("#moreBtn").text("Load More").removeClass("null");
     }
 
-    
-    // if(count <= 6) {
-    //   $("#moreBtn").text("No More").addClass("null");
-    // } 
-    
-    // $("#moreBtn").text("Load More").removeClass("null");
-
     // 顯示前六個
     $('.blockList a').slice(0, 6).css('display', 'block');
     

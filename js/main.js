@@ -412,9 +412,9 @@ $(document).ready(function () {
     
 
     if(count <= 6) {
-      $("#moreBtn").text("No More").addClass("null");
-    } else {
       $("#moreBtn").text("Load More").removeClass("null");
+    } else {
+      $("#moreBtn").text("No More").addClass("null");
     }
 
     // 顯示前六個
@@ -424,6 +424,7 @@ $(document).ready(function () {
     $('#moreBtn').click(function() {
         $('.blockList a:hidden').slice(0, 4).css('display', 'block');
         if($(".blockList a:hidden").length == 0) {
+          
           $("#moreBtn").text("No More").addClass("null");
         }
     })

@@ -412,10 +412,17 @@ $(document).ready(function () {
     
 
     if(count <= 6) {
-      $("#moreBtn").text("Load More").removeClass("null");
-    } else {
       $("#moreBtn").text("No More").addClass("null");
+    } else {
+      $("#moreBtn").text("Load More").removeClass("null");
     }
+
+    
+    // if(count <= 6) {
+    //   $("#moreBtn").text("No More").addClass("null");
+    // } 
+    
+    // $("#moreBtn").text("Load More").removeClass("null");
 
     // 顯示前六個
     $('.blockList a').slice(0, 6).css('display', 'block');
@@ -424,7 +431,6 @@ $(document).ready(function () {
     $('#moreBtn').click(function() {
         $('.blockList a:hidden').slice(0, 4).css('display', 'block');
         if($(".blockList a:hidden").length == 0) {
-          
           $("#moreBtn").text("No More").addClass("null");
         }
     })

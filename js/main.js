@@ -1,11 +1,6 @@
 $(document).ready(function () {
-  
 
-
-  ////// --header/footer載入begin--
-
-  // $('#header').load('./header.html');
-  // $('#footer').load('./footer.html');
+  ////// HEADER&FOOTER LOAD begin
 
   var headerDom = document.getElementById('header');
   var footerDom = document.getElementById('footer');
@@ -26,8 +21,6 @@ $(document).ready(function () {
     
     // 點擊切換分頁
     $('.tabLink').click(function() {
-      // console.log(123);
-      // console.log($(this).attr('data-href'));
       var url = $(this).attr('href');
       
       $(this).addClass('active')
@@ -50,13 +43,13 @@ $(document).ready(function () {
 
   }));
 
-  ////// header/footer載入end
+  ////// HEADER&FOOTER LOAD end
 
 
 
 
 
-  ////// --搜尋 begin--
+  ////// SEARCH begin--
 
   var pContent = {
     "UI設計切版": [
@@ -244,7 +237,6 @@ $(document).ready(function () {
   var sTag = $('#sBtn button');
   var sArr = [];
   var html = '';
-  // var sBlock = $('.block')[0];
 
   // for迴圈不能使用匿名函示
   for(var s = 0; s < sTag.length; s++) {
@@ -272,45 +264,39 @@ $(document).ready(function () {
     html = '';
     sBlock.html(html);
 
+    // 存入數組陣列
     sArr =  Object.entries(pContent);
     
-  
     var str = '';
     for(var i = 0; i < sArr.length; i++) {
       for(var j = 0; j < sArr[i][1].length; j++) {
         str = sArr[i][1][j];
-        html += '<a class="'+str.classN+'" href="'+str.href+'" target="'+str.target+'" data-aos="fade-right">'
-        html += '<div class="hover"><div class="content">'
-        html += '<div class="hashtag">'+str.hashtag+'</div>'
-        html += '<div class="title">'+str.title+'</div></div></div>'
-        html += '<img class="lazyload" src="img/lazy.svg" data-src="'+str.src+'" alt="'+str.title+'"></a>'
-        // str = sArr[i][1][j];
-        // var html = `
-        //   <a class="${str.classN}" href'"${str.href}" target="${str.target}" data-aos="fade-right">
-        //     <div class="hover">
-        //       <div class="content">
-        //         <div class="hashtag">${str.hashtag}</div>
-        //         <div class="title">${str.title}</div>
-        //       </div>
-        //     </div>
-        //     <img class="lazyload" src="img/lazy.svg" data-src="${str.src}" alt="${str.title}">
-        //   </a>
-        // `
+        html += 
+        `
+        <a class="${str.classN}" href="${str.href}" target="${str.target}" data-aos="fade-right">
+          <div class="hover">
+            <div class="content">
+              <div class="hashtag">${str.hashtag}</div>
+              <div class="title">${str.title}</div>
+            </div>
+          </div>
+          <img class="lazyload" src="img/lazy.svg" data-src="${str.src}" alt="${str.title}">
+        </a>
+        `
       }
   
     }
     sBlock.html(html);
-    loadMore(sArr.length);
+    loadMore($('.blockList a').length);
+    // console.log($('.blockList a').length);
+    
 
     $(".inline").colorbox({
       inline: true, 
       maxWidth: '720px',
       maxHeight: '95%',
       scalePhotos: true,
-      photo: true
-    });
-
-    $(".inline").colorbox({
+      photo: true,
       onOpen: function(){
         $('body').css({ overflow: 'hidden' });
       },
@@ -333,11 +319,18 @@ $(document).ready(function () {
     
     
     for(var i = 0; i < sArr.length; i++) {
-      html += '<a class="'+sArr[i].classN+'" href="'+sArr[i].href+'" target="'+sArr[i].target+'" data-aos="fade-right">'
-      html += '<div class="hover"><div class="content">'
-      html += '<div class="hashtag">'+sArr[i].hashtag+'</div>'
-      html += '<div class="title">'+sArr[i].title+'</div></div></div>'
-      html += '<img class="lazyload" src="img/lazy.svg" data-src="'+sArr[i].src+'" alt="'+sArr[i].title+'"></a>'
+      html += 
+      `
+      <a class="${sArr[i].classN}" href="${sArr[i].href}" target="${sArr[i].target}" data-aos="fade-right">
+        <div class="hover">
+          <div class="content">
+            <div class="hashtag">${sArr[i].hashtag}</div>
+            <div class="title">${sArr[i].title}</div>
+          </div>
+        </div>
+        <img class="lazyload" src="img/lazy.svg" data-src="${sArr[i].src}" alt="${sArr[i].title}">
+      </a>
+      `
     }
       // console.log('1 '+sBlock);
       sBlock.html(html);
@@ -398,11 +391,11 @@ $(document).ready(function () {
   //   }
   // })
 
-  ////// --搜尋 end--
+  ////// SEARCH end
 
   
 
-  ////// --載入更多內容 begin--
+  ////// LOADMORE begin
 
   // var $item = $(".block a");
 
@@ -434,11 +427,11 @@ $(document).ready(function () {
   }
 
   
-  ////// --載入更多內容 end--
+  ////// LOADMORE end
 
 
 
-  ////// --swiper begin--
+  ////// SWIPER begin
 
   // var swiper = new Swiper(".swiper-container", {
   //     cssMode: true,
@@ -459,27 +452,17 @@ $(document).ready(function () {
   //     observeParents: true, //修改swiper的父元素时，自动初始化swiper
   // });
 
-  ////// --swiper end--
+  ////// SWIPER end
 
-  ////// --colorbox begin--
+  ////// COLORBOX begin
   //Examples of how to assign the Colorbox event to elements
-  // $(".group1").colorbox({rel:'group1'});
-  // $(".group2").colorbox({rel:'group2', transition:"fade"});
-  // $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-  // $(".group4").colorbox({rel:'group4', slideshow:true});
-  // $(".ajax").colorbox();
-  // $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
-  // $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-  // $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
 
   $(".inline").colorbox({
     inline: true, 
     maxWidth: '720px',
     maxHeight: '95%',
     scalePhotos: true,
-    photo: true
-  });
-  $(".inline").colorbox({
+    photo: true,
     onOpen: function(){
       $('body').css({ overflow: 'hidden' });
     },
@@ -487,32 +470,14 @@ $(document).ready(function () {
        $('body').css({ overflow: '' });
     }
   });
-  
 
-  // $(".callbacks").colorbox({
-  //     onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-  //     onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-  //     onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-  //     onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-  //     onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-  // });
+  ////// COLORBOX end
 
-  // $('.non-retina').colorbox({rel:'group5', transition:'none'})
-  // $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
-  
-  // //Example of preserving a JavaScript event for inline calls.
-  // $("#click").click(function(){ 
-  //     $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-  //     return false;
-  // });
-
-  ////// --colorbox end--
-
-  ////// --AOS begin--
+  ////// AOS begin
 
   AOS.init();
 
-  ////// --AOS end--
+  ////// AOS end
 
 
 })

@@ -55,7 +55,7 @@ $(document).ready(function () {
     "UI設計切版": [
       {
         hashtag: ['UI設計', '切版', 'Figma', '\
-        Html', 'Css', 'JavaScript'] ,
+        Html', 'Css', 'JavaScript'],
         title: '線上櫃台功能設計切版',
         href: '#counter01',
         classN: 'inline',
@@ -63,8 +63,16 @@ $(document).ready(function () {
         src: 'img/counter01.webp'
       },
       {
+        hashtag: ['UI設計', '切版', 'Figma'],
+        title: '線上櫃台後台設計',
+        href: '#counter03',
+        classN: 'inline',
+        target: '',
+        src: 'img/counter03-th.webp'
+      },
+      {
         hashtag: ['UI設計', '切版', 'Xd', '\
-        Html', 'Css', 'JavaScript'] ,
+        Html', 'Css', 'JavaScript'],
         title: '高中段考守護神詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
         classN: '',
@@ -294,6 +302,7 @@ $(document).ready(function () {
     $(".inline").colorbox({
       inline: true, 
       maxWidth: '720px',
+      width: '95%',
       maxHeight: '95%',
       scalePhotos: true,
       photo: true,
@@ -341,6 +350,7 @@ $(document).ready(function () {
       $(".inline").colorbox({
         inline: true, 
         maxWidth: '720px',
+        width: '95%',
         maxHeight: '95%', 
         scalePhotos: true,
         photo: true
@@ -460,6 +470,7 @@ $(document).ready(function () {
   $(".inline").colorbox({
     inline: true, 
     maxWidth: '720px',
+    width: '95%',
     maxHeight: '95%',
     scalePhotos: true,
     photo: true,

@@ -73,7 +73,7 @@ $(document).ready(function () {
       {
         hashtag: ['UI設計', '切版', 'Xd', '\
         Html', 'Css', 'JavaScript'],
-        title: '高中段考守護神詳細頁設計切版',
+        title: '高中段考詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
         classN: '',
         target: '_blank',
@@ -108,7 +108,7 @@ $(document).ready(function () {
       {
         hashtag: ['UI設計', '切版', 'Figma', '\
         Html', 'Css', 'JavaScript'] ,
-        title: 'TKBGO會員專區設計切版',
+        title: '會員專區設計切版',
         href: '#member01',
         classN: 'inline cboxElement',
         target: '',
@@ -117,7 +117,7 @@ $(document).ready(function () {
       {
         hashtag: ['UI設計', '切版', 'Xd', '\
         Html', 'Css', 'JavaScript'] ,
-        title: 'TKBGO登入註冊跳窗設計切版',
+        title: '登入註冊跳窗設計切版',
         href: '#login01',
         classN: 'inline cboxElement',
         target: '',

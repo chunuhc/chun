@@ -148,6 +148,14 @@ $(document).ready(function () {
         classN: 'inline cboxElement',
         target: '',
         src: 'img/dm01-1.webp'
+      },
+      {
+        hashtag: ['文宣設計', 'Illustrator'],
+        title: '記帳士教材封面',
+        href: '#book01',
+        classN: 'inline cboxElement',
+        target: '',
+        src: 'img/book01-th.webp'
       }
     ],
     "Banner設計": [
@@ -345,7 +353,8 @@ $(document).ready(function () {
       sBlock.html(html);
       // console.log(sBlock);
 
-      loadMore(sArr.length);
+      // loadMore(sArr.length);
+      loadMore($('.blockList a').length);
 
       $(".inline").colorbox({
         inline: true, 
@@ -425,10 +434,10 @@ $(document).ready(function () {
     
     // 按下更多再載入四個
     $('#moreBtn').click(function() {
-        $('.blockList a:hidden').slice(0, 4).css('display', 'block');
-        if($(".blockList a:hidden").length == 0) {
-          $("#moreBtn").text("No More").addClass("null");
-        }
+      $('.blockList a:hidden').slice(0, 4).css('display', 'block');
+      if($(".blockList a:hidden").length == 0) {
+        $("#moreBtn").text("No More").addClass("null");
+      } 
     })
 
     // console.log(count);

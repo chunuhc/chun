@@ -259,15 +259,10 @@ $(document).ready(function () {
 
     sTag[s].addEventListener('click', function() {
 
-      if(this.id !== 'allBtn') {
-        // console.log('no');
-        tagSearch(this.innerText);
-      } else {
-        // console.log('yes');
-        allBlock();
-      }
-      // console.log(this);
       $(this).addClass('active').siblings().removeClass('active');
+
+      if(this.id !== 'allBtn') return tagSearch(this.innerText);
+      allBlock();
       
     });
 
@@ -416,18 +411,9 @@ $(document).ready(function () {
 
   ////// LOADMORE begin
 
-  // var $item = $(".block a");
+  // var count = $('.blockList a').length;
 
   function loadMore(count) {
-
-    // console.log(count);
-    
-
-    if(count <= 6) {
-      $("#moreBtn").text("No More").addClass("null");
-    } else {
-      $("#moreBtn").text("Load More").removeClass("null");
-    }
 
     // 顯示前六個
     $('.blockList a').slice(0, 6).css('display', 'block');
@@ -435,13 +421,14 @@ $(document).ready(function () {
     // 按下更多再載入四個
     $('#moreBtn').click(function() {
       $('.blockList a:hidden').slice(0, 4).css('display', 'block');
-      if($(".blockList a:hidden").length == 0) {
+      if($(".blockList a:hidden").length === 0) {
         $("#moreBtn").text("No More").addClass("null");
       } 
     })
 
-    // console.log(count);
-    
+    // 判斷loadmore按鈕
+    if(count <= 6) return $("#moreBtn").text("No More").addClass("null");
+    $("#moreBtn").text("Load More").removeClass("null");
 
   }
 
@@ -498,6 +485,17 @@ $(document).ready(function () {
   AOS.init();
 
   ////// AOS end
+
+
+
+  //// ex.
+  // check(function() {
+  //   // callback執行內容
+  // })
+  // function check(callback) {
+  //   // 內容1
+  //   callback();
+  // }
 
 
 })

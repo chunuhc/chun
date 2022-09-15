@@ -374,6 +374,12 @@ ul.navBar {
 .inlineContent {
     // width: 100%;
     // display: flex;
+    color: #484040;
+    ol {
+        li {
+            // line-height: 20px;
+        }
+    }
     img {
         max-width: 100%;
     }

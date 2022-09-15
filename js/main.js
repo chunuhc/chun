@@ -284,7 +284,7 @@ $(document).ready(function () {
         str = sArr[i][1][j];
         html += 
         `
-        <a class="${str.classN}" href="${str.href}" target="${str.target}" data-aos="fade-right">
+        <a class="${str.classN}" href="${str.href}" target="${str.target}">
           <div class="hover">
             <div class="content">
               <div class="hashtag">${str.hashtag}</div>
@@ -333,7 +333,7 @@ $(document).ready(function () {
     for(var i = 0; i < sArr.length; i++) {
       html += 
       `
-      <a class="${sArr[i].classN}" href="${sArr[i].href}" target="${sArr[i].target}" data-aos="fade-right">
+      <a class="${sArr[i].classN}" href="${sArr[i].href}" target="${sArr[i].target}">
         <div class="hover">
           <div class="content">
             <div class="hashtag">${sArr[i].hashtag}</div>
@@ -343,6 +343,7 @@ $(document).ready(function () {
         <img class="lazyload" src="img/lazy.svg" data-src="${sArr[i].src}" alt="${sArr[i].title}">
       </a>
       `
+      // data-aos="fade-right"
     }
       // console.log('1 '+sBlock);
       sBlock.html(html);
@@ -416,7 +417,7 @@ $(document).ready(function () {
   function loadMore(count) {
 
     // 顯示前六個
-    $('.blockList a').slice(0, 6).css('display', 'block');
+    $('.blockList a').slice(0, 12).css('display', 'block');
     
     // 按下更多再載入四個
     $('#moreBtn').click(function() {
@@ -427,7 +428,7 @@ $(document).ready(function () {
     })
 
     // 判斷loadmore按鈕
-    if(count <= 6) return $("#moreBtn").text("No More").addClass("null");
+    if(count <= 12) return $("#moreBtn").text("No More").addClass("null");
     $("#moreBtn").text("Load More").removeClass("null");
 
   }

@@ -60,7 +60,7 @@ $(document).ready(function () {
         href: '#counter01',
         classN: 'inline',
         target: '',
-        src: 'img/counter01.webp'
+        src: 'img/counter01-th.webp'
       },
       {
         hashtag: ['UI設計', '切版', 'Figma'],

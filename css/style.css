@@ -7640,9 +7640,8 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   cursor: unset;
 }
 
-.inlineContent p {
+.inlineContent {
   color: #484040;
-  line-height: 20px;
 }
 
 .inlineContent img {

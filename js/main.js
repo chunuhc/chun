@@ -98,6 +98,49 @@ $(document).ready(function () {
         src: 'img/edm01-th.webp'
       },
       {
+        hashtag: ['UI設計','Illustrator', 'Xd', '\
+        Html', 'Css', 'JavaScript'],
+        title: '中鋼行銷頁設計切版',
+        href: 'https://www.tkbgo.com.tw/go_edm/edm178/index.jsp',
+        classN: '',
+        target: '_blank',
+        src: 'img/edm05-th.webp'
+      },
+      {
+        hashtag: ['UI設計','Illustrator'],
+        title: '放洋留遊學詳細頁設計',
+        href: '#edm06',
+        classN: 'inline',
+        target: '',
+        src: 'img/edm06-th.webp'
+      },
+      {
+        hashtag: ['UI設計','Illustrator', 'Xd', '\
+        Html', 'Css', 'JavaScript'],
+        title: '商用日文詳細頁設計切版',
+        href: 'https://www.tkbgo.com.tw/go_edm/edm615/index.jsp',
+        classN: '',
+        target: '_blank',
+        src: 'img/edm07-th.webp'
+      },
+      {
+        hashtag: ['UI設計','Illustrator', '\
+        Html', 'Css', 'JavaScript'],
+        title: '銀行短衝詳細頁設計切版',
+        href: 'https://www.tkbgo.com.tw/go_edm/edm599/index.jsp',
+        classN: '',
+        target: '_blank',
+        src: 'img/edm08-th.webp'
+      },
+      {
+        hashtag: ['UI設計','Illustrator'],
+        title: '國營聯招詳細頁設計',
+        href: '#edm09',
+        classN: 'inline',
+        target: '',
+        src: 'img/edm09-th.webp'
+      },
+      {
         hashtag: ['UI設計','Illustrator', 'Xd'],
         title: '學習歷程檔案詳細頁設計',
         href: '#edm04',
@@ -217,7 +260,7 @@ $(document).ready(function () {
         href: 'img/logo04pdf.pdf',
         classN: '',
         target: '_blank',
-        src: 'img/logo04.webp'
+        src: 'img/logo04-th.webp'
       }
     ],
     "插畫設計": [

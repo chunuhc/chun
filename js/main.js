@@ -54,8 +54,7 @@ $(document).ready(function () {
   var pContent = {
     "UI設計切版": [
       {
-        hashtag: ['UI設計', '切版', 'Figma', '\
-        Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版'],
         title: '線上櫃台功能設計切版',
         href: '#counter01',
         classN: 'inline',
@@ -63,7 +62,7 @@ $(document).ready(function () {
         src: 'img/counter01-th.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Figma'],
+        hashtag: ['UI設計', '切版'],
         title: '線上櫃台後台設計',
         href: '#counter03',
         classN: 'inline',
@@ -71,8 +70,7 @@ $(document).ready(function () {
         src: 'img/counter03-th.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Xd', '\
-        Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版'],
         title: '高中段考詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
         classN: '',
@@ -80,8 +78,7 @@ $(document).ready(function () {
         src: 'img/edm02-th.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Illustrator', '\
-        Figma', 'Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版'],
         title: '外交官特考詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm215/index.jsp',
         classN: '',
@@ -89,8 +86,7 @@ $(document).ready(function () {
         src: 'img/edm03-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator', 'Figma', '\
-        Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版'],
         title: '上榜頂大詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm220/index.jsp',
         classN: '',
@@ -98,8 +94,7 @@ $(document).ready(function () {
         src: 'img/edm01-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator', 'Xd', '\
-        Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版'],
         title: '中鋼行銷頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm178/index.jsp',
         classN: '',
@@ -107,7 +102,7 @@ $(document).ready(function () {
         src: 'img/edm05-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator'],
+        hashtag: ['UI設計'],
         title: '放洋留遊學詳細頁設計',
         href: '#edm06',
         classN: 'inline',
@@ -115,8 +110,7 @@ $(document).ready(function () {
         src: 'img/edm06-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator', 'Xd', '\
-        Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版'],
         title: '商用日文詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm615/index.jsp',
         classN: '',
@@ -124,8 +118,7 @@ $(document).ready(function () {
         src: 'img/edm07-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator', '\
-        Html', 'Css', 'JavaScript'],
+        hashtag: ['UI設計', '切版'],
         title: '銀行短衝詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm599/index.jsp',
         classN: '',
@@ -133,7 +126,7 @@ $(document).ready(function () {
         src: 'img/edm08-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator'],
+        hashtag: ['UI設計'],
         title: '國營聯招詳細頁設計',
         href: '#edm09',
         classN: 'inline',
@@ -141,7 +134,7 @@ $(document).ready(function () {
         src: 'img/edm09-th.webp'
       },
       {
-        hashtag: ['UI設計','Illustrator', 'Xd'],
+        hashtag: ['UI設計'],
         title: '學習歷程檔案詳細頁設計',
         href: '#edm04',
         classN: 'inline cboxElement',
@@ -149,8 +142,7 @@ $(document).ready(function () {
         src: 'img/edm04-th.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Figma', '\
-        Html', 'Css', 'JavaScript'] ,
+        hashtag: ['UI設計', '切版'] ,
         title: '會員專區設計切版',
         href: '#member01',
         classN: 'inline cboxElement',
@@ -158,8 +150,7 @@ $(document).ready(function () {
         src: 'img/member01.webp'
       },
       {
-        hashtag: ['UI設計', '切版', 'Xd', '\
-        Html', 'Css', 'JavaScript'] ,
+        hashtag: ['UI設計', '切版'] ,
         title: '登入註冊跳窗設計切版',
         href: '#login01',
         classN: 'inline cboxElement',
@@ -167,7 +158,7 @@ $(document).ready(function () {
         src: 'img/login01.webp'
       },
       {
-        hashtag: ['UI設計', 'Xd'] ,
+        hashtag: ['UI設計'] ,
         title: 'ICAR登入設計',
         href: '#login05',
         classN: 'inline cboxElement',
@@ -177,7 +168,7 @@ $(document).ready(function () {
     ],
     "文宣設計": [
       {
-        hashtag: ['文宣設計', 'Illustrator', 'Photoshop'],
+        hashtag: ['文宣設計'],
         title: '記帳士手冊封面',
         href: '#dm03',
         classN: 'inline cboxElement',
@@ -185,7 +176,7 @@ $(document).ready(function () {
         src: 'img/dm03.webp'
       },
       {
-        hashtag: ['文宣設計', 'Illustrator'],
+        hashtag: ['文宣設計'],
         title: '文化行政傳單DM',
         href: '#dm01',
         classN: 'inline cboxElement',
@@ -193,7 +184,7 @@ $(document).ready(function () {
         src: 'img/dm01-1.webp'
       },
       {
-        hashtag: ['文宣設計', 'Illustrator'],
+        hashtag: ['文宣設計'],
         title: '記帳士教材封面',
         href: '#book01',
         classN: 'inline cboxElement',
@@ -203,7 +194,7 @@ $(document).ready(function () {
     ],
     "Banner設計": [
       {
-        hashtag: ['Banner設計','Illustrator'],
+        hashtag: ['Banner設計'],
         title: '記帳士優惠Banner',
         href: '#banner01',
         classN: 'inline cboxElement',
@@ -211,7 +202,7 @@ $(document).ready(function () {
         src: 'img/banner01.webp'
       },
       {
-        hashtag: ['Banner設計','Illustrator'],
+        hashtag: ['Banner設計'],
         title: '銀行招考直播Banner',
         href: '#banner02',
         classN: 'inline cboxElement',
@@ -219,7 +210,7 @@ $(document).ready(function () {
         src: 'img/banner02.webp'
       },
       {
-        hashtag: ['Banner設計', '插畫設計', 'Illustrator'],
+        hashtag: ['Banner設計', '插畫設計'],
         title: '歐恩伊聯名商品Facebook廣告',
         href: '#banner05',
         classN: 'inline cboxElement',
@@ -229,7 +220,7 @@ $(document).ready(function () {
     ],
     "圖說設計": [
       {
-        hashtag: ['圖說設計','Illustrator'],
+        hashtag: ['圖說設計'],
         title: '高中升學路徑說明圖',
         href: '#banner03',
         classN: 'inline cboxElement',
@@ -237,7 +228,7 @@ $(document).ready(function () {
         src: 'img/banner03.webp'
       },
       {
-        hashtag: ['圖說設計','Illustrator'],
+        hashtag: ['圖說設計'],
         title: '前端必修課程封面圖',
         href: '#banner04',
         classN: 'inline cboxElement',
@@ -247,7 +238,7 @@ $(document).ready(function () {
     ],
     "Logo設計": [
       {
-        hashtag: ['Logo設計', 'Illustrator'],
+        hashtag: ['Logo設計'],
         title: 'DoWell Logo',
         href: '#logo03',
         classN: 'inline cboxElement',
@@ -255,7 +246,7 @@ $(document).ready(function () {
         src: 'img/logo03.webp'
       },
       {
-        hashtag: ['Logo設計', 'Illustrator'],
+        hashtag: ['Logo設計'],
         title: 'VICVIN Logo',
         href: 'img/logo04pdf.pdf',
         classN: '',
@@ -265,7 +256,7 @@ $(document).ready(function () {
     ],
     "插畫設計": [
       {
-        hashtag: ['插畫設計','Illustrator'],
+        hashtag: ['插畫設計'],
         title: 'TKB日文柴犬',
         href: '#paint01',
         classN: 'inline cboxElement',
@@ -281,7 +272,7 @@ $(document).ready(function () {
         src: 'img/paint02.webp'
       },
       {
-        hashtag: ['插畫設計','Illustrator'],
+        hashtag: ['插畫設計'],
         title: '米克斯插畫練習',
         href: '#paint03',
         classN: 'inline cboxElement',

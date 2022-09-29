@@ -63,14 +63,6 @@ $(document).ready(function () {
       },
       {
         hashtag: ['UI設計', '切版'],
-        title: '線上櫃台後台設計',
-        href: '#counter03',
-        classN: 'inline',
-        target: '',
-        src: 'img/counter03-th.webp'
-      },
-      {
-        hashtag: ['UI設計', '切版'],
         title: '高中段考詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
         classN: '',

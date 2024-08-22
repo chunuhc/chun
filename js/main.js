@@ -63,6 +63,14 @@ $(document).ready(function () {
       },
       {
         hashtag: ['UI設計', '切版'],
+        title: '電商活動頁',
+        href: 'https://www.jollybuy.com/act/acgworld/',
+        classN: '',
+        target: '_blank',
+        src: 'img/jb01.jpg'
+      },
+      {
+        hashtag: ['UI設計', '切版'],
         title: '高中段考詳細頁設計切版',
         href: 'https://www.tkbgo.com.tw/go_edm/edm665/index.jsp',
         classN: '',

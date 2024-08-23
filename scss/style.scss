@@ -267,6 +267,9 @@ ul.navBar {
     button {
         color: #fff;
         background-color: #d6ba8d;
+        background: linear-gradient(120deg, #d6ba8d 0%, #d6ba8d 50%, #c7aa7c 50%);
+        background-size: 250%;
+        transition: all .5s;
         border: 0;
         border-radius: 8px;
         font-size: 14px;
@@ -274,13 +277,17 @@ ul.navBar {
         padding: 4px 16px;
         margin: 4px;
         &:hover {
-            background-color: #c7aa7c;
+            background-position: 100%;
         }
         &:focus {
             outline: none;
         }
         &.active {
             background-color: #c7aa7c;
+            border: 2px solid #c3a370;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
         }
     }
 }

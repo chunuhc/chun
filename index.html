@@ -1,249 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <title>CHUN CHEN ｜ PORFOLIO</title>
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- Link Swiper's CSS -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
     <!-- fontawesome's CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- colorbox's CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/example1/colorbox.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/example1/colorbox.min.css"
+    />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
+      <div id="header">
+        <!-- test123456 -->
+      </div>
+      <div class="mainContent">
+        <div id="allTabContent" class="container tabContent">
+          <div id="sBar" class="sBar" style="display: none">
+            <input class="searchBar" type="text" />
+          </div>
+          <div id="sBtn" class="sBtn">
+            <button id="allBtn" class="sBtnItem active">ALL</button>
+            <button class="sBtnItem">UI設計切版</button>
+            <button class="sBtnItem">文宣設計</button>
+            <button class="sBtnItem">Banner設計</button>
+            <button class="sBtnItem">圖說設計</button>
+            <button class="sBtnItem">Logo設計</button>
+            <button class="sBtnItem">插畫設計</button>
+          </div>
+          <div class="blockList"></div>
 
-        <div id="header">
-            <!-- test123 -->
+          <button id="moreBtn">Load More</button>
         </div>
-        <div class="mainContent">
-            <div id="allTabContent" class="container tabContent">
-                
-                <div id="sBar" class="sBar" style="display: none;">
-                    <input class="searchBar" type="text">
-                </div>
-                <div id="sBtn" class="sBtn">
-                    <button id="allBtn" class="sBtnItem active">ALL</button>
-                    <button class="sBtnItem">UI設計切版</button>
-                    <button class="sBtnItem">文宣設計</button>
-                    <button class="sBtnItem">Banner設計</button>
-                    <button class="sBtnItem">圖說設計</button>
-                    <button class="sBtnItem">Logo設計</button>
-                    <button class="sBtnItem">插畫設計</button>
-                </div>
-                <div class="blockList">
-                    
-                </div>
-        
-                <button id="moreBtn">Load More</button>
-        
-            </div>
-            <div style="display: none;">
-                <div id="dm01" class="inlineContent">
-                    <img src="img/dm01-1.webp" alt="dm01">
-                    <hr class="hrN">
-                    <img src="img/dm01-2.webp" alt="">
-                </div>
-                <div id="dm03" class="inlineContent">
-                    <img src="img/dm03.webp" alt="">
-                </div>
-                <div id="edm04" class="inlineContent">
-                    <img src="img/edm04.webp" alt="">
-                </div>
-                <div id="edm06" class="inlineContent">
-                    <img src="img/edm06.webp" alt="">
-                </div>
-                <div id="edm09" class="inlineContent">
-                    <img src="img/edm09.webp" alt="">
-                </div>
-                <div id="logo03" class="inlineContent">
-                    <img src="img/logo03.webp" alt="">
-                </div>
-                <!-- <div id="logo04" class="inlineContent">
+        <div style="display: none">
+          <div id="dm01" class="inlineContent">
+            <img src="img/dm01-1.webp" alt="dm01" />
+            <hr class="hrN" />
+            <img src="img/dm01-2.webp" alt="" />
+          </div>
+          <div id="dm03" class="inlineContent">
+            <img src="img/dm03.webp" alt="" />
+          </div>
+          <div id="edm04" class="inlineContent">
+            <img src="img/edm04.webp" alt="" />
+          </div>
+          <div id="edm06" class="inlineContent">
+            <img src="img/edm06.webp" alt="" />
+          </div>
+          <div id="edm09" class="inlineContent">
+            <img src="img/edm09.webp" alt="" />
+          </div>
+          <div id="logo03" class="inlineContent">
+            <img src="img/logo03.webp" alt="" />
+          </div>
+          <!-- <div id="logo04" class="inlineContent">
                     <img src="img/logo04.webp" alt="">
                 </div> -->
-                <div id="login01" class="inlineContent">
-                    <img src="img/login01.webp" alt="">
-                    <hr class="hrN">
-                    <img src="img/login02.webp" alt="">
-                    <hr class="hrN">
-                    <img src="img/login03.webp" alt="">
-                    <hr class="hrN">
-                    <img src="img/login04.webp" alt="">
-                </div>
-                <div id="member01" class="inlineContent">
-                    <img src="img/member01.webp" alt="">
-                    <hr class="hrN">
-                    <img src="img/member02.webp" alt="">
-                    <!-- <img src="img/member03.webp" alt=""> -->
-                </div>
-                <div id="login05" class="inlineContent">
-                    <img src="img/login05.webp" alt="">
-                </div>
-                <div id="paint01" class="inlineContent">
-                    <img src="img/paint01.webp" alt="">
-                </div>
-                <div id="paint02" class="inlineContent">
-                    <img src="img/paint02.webp" alt="">
-                </div>
-                <div id="paint03" class="inlineContent">
-                    <img src="img/paint03.webp" alt="">
-                </div>
-                <div id="banner01" class="inlineContent">
-                    <img src="img/banner01.webp" alt="">
-                </div>
-                <div id="banner02" class="inlineContent">
-                    <img src="img/banner02.webp" alt="">
-                </div>
-                <div id="banner03" class="inlineContent">
-                    <img src="img/banner03.webp" alt="">
-                </div>
-                <div id="banner04" class="inlineContent">
-                    <img src="img/banner04.webp" alt="">
-                </div>
-                <div id="banner05" class="inlineContent">
-                    <img src="img/banner05.webp" alt="">
-                </div>
-                <div id="counter01" class="inlineContent">
-                    <ul>
-                        <li>Figma繪製線框稿及視覺稿。</li>
-                        <li>確認視覺後，切版完成並交付後端工程師。</li>
-                    </ul>
-                    <img src="img/counter01-th.webp" alt="">
-                </div>
-                <div id="counter03" class="inlineContent">
-                    <img src="img/counter03.webp" alt="">
-                    <hr class="hrN">
-                    <img src="img/counter04.webp" alt="">
-                </div>
-                <div id="book01" class="inlineContent">
-                    <img src="img/book01.webp" alt="">
-                </div>
-            </div>
-            <div id="aboutTabContent" class="container tabContent" style="display: none;">
-                <div class="about">
-                    <div class="col-12 col-md-5 mr-md-auto">
-        
-                        <div class="aboutImg">
-                            <img src="./img/portfolioimg.webp" alt="">
-                        </div>
-                        <div class="d-flex mt-3">
-                            <div class="aboutTitle col px-0">
-                                <label>NAME</label>
-                                <p>Hsiang Chun, Chen</p>
-                            </div>
-                
-                            <div class="aboutTitle col px-0">
-                                <label>EMAIL</label>
-                                <p>so8151@gmail.com</p>
-                            </div>
-                        </div>
-        
-                        <label>SKILL</label>
-                        <div class="d-flex">
-                            <div class="aboutTitle col px-0">
-                                <ul>
-                                    <li>Illustrator</li>
-                                    <li>Photoshop</li>
-                                    <li>Indesign</li>
-                                    <li>Xd</li>
-                                    <li>Figma</li>
-                                </ul>
-                            </div>
-                            <div class="aboutTitle col px-0">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Mac OS</li>
-                                    <li>Window</li>
-                                </ul>
-                            </div>
-        
-                        </div>
-        
-            
-                        <div class="aboutTitle">
-                            <label>Education</label>
-                            <p class="school">德明財經科技大學(進修部) 多媒體設計系｜2010/9~2014/6</p>
-                        </div>
-            
-                        <div class="aboutTitle">
-                            <label>Qualifications</label>
-                            <div class="quas">
-                                <p class="jobTitle">TKBGO 網頁設計｜2020/4~2022/6</p>
-                                <!-- 工作內容： -->
-                                <ol>
-                                    <li>官網子網頁之UI設計、切版</li>
-                                    <li>活動banner及GDN等素材設計</li>
-                                    <li>平面印刷教材封面/DM設計</li>
-                                    <li>維護更新網頁</li>
-                                    <li>官網子品牌之插畫設計</li>
-                                </ol>
-                            </div>
-                            <div class="quas">
-                                <p class="jobTitle">TRACEEZ 視覺設計｜2019/6~2020/2</p>
-                                <!-- 工作內容： -->
-                                <ol>
-                                    <li>展覽活動背景設計</li>
-                                    <li>官網及臉書行銷橫幅設計</li>
-                                    <li>產品說明頁圖片設計</li>
-                                    <li>參與App UI更新及設計</li>
-                                    <li>官網wordpress編排</li>
-                                    <li>系統後台UI設計</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="col-12 col-md-6">
-                        <div class="aboutTitle">
-                            <label>Autobiography</label>
-                        </div>
-                        <div class="aboutDetail">
-                            <p>我出生於1992年，畢業於德明財經科技大學-多媒體設計系，因家中經濟關係，父母期許我們能獨立自主，高職便開始就讀夜校以半工半讀的方式完成學業；個性開朗，自認工作適應能力快速、喜愛瀏覽新的資訊、自我進修，平時工作態度積極、學習快速，有兩年的網頁設計經歷以及五年的電子商務廣告設計經歷！</p>
-                
-                            <p>由於自小對藝術設計有興趣，雖然高職時沒有就讀設計相關科系，有時間便會自學設計相關軟體，現階段也是不斷精進自己的設計能力及軟體操作、自學或是觀看線上課程持續進修，目前持續學習的主要課程為JavaScript。 </p>
-                
-                            <p>前一份工作就職於線上課程平台，擔任維護線上課程網頁及設計，負責的項目有官網子網頁的UI設計及切版、課程教材封面設計、實體宣傳DM設計、線上banner及GDN設計等，有設計切版過子網頁的優惠頁面、會員專區、線上櫃檯小工具，UI設計有使用Adobe XD、Figma，平面設計會用到Photoshop修圖、Illustrator繪圖進行主視覺設計及插畫設計、Indesign排版頁碼較少的手冊、網頁切版則是習慣使用VS Code進行，也有使用SourTree更新GIT的經驗。</p>
-                
-                            <p>曾任職於電子業擔任視覺設計，負責公司參展之海報背景設計、官網商品詳細圖設計及Facebook行銷等素材的拍攝及製作；有簡易使用wordpress編排官網之經驗，也因公司有製作app及系統前後台的關係，有參與設計網頁系統後台編寫，以及app更新繪製UI介面設計。</p>
-                
-                            <p>過往曾於網路女裝/女包品牌擔任美術編輯，製作新品及行銷Banner、廣告素材、編輯HTML更新商城首頁及發送EDM的部分，工作時能準確的達到主管希望的風格及符合流行女裝更新快速的頻率；也有參與協助棚拍的會議及現場model情境照協助拍攝，從中也學到了很多廣告素材、棚拍、型錄之經驗。 </p>
-                
-                            <p>期許自己能在這個資訊進步的世界，精進自身能力並有所突破！</p>
-
-                            <p>其他過往作品：<a href="https://so8151.wixsite.com/website" target="_blank">https://so8151.wixsite.com/website</a></p>
-                        </div>
-                    </div>
-                </div>
-                
-        
-        
-        
-            </div>
+          <div id="login01" class="inlineContent">
+            <img src="img/login01.webp" alt="" />
+            <hr class="hrN" />
+            <img src="img/login02.webp" alt="" />
+            <hr class="hrN" />
+            <img src="img/login03.webp" alt="" />
+            <hr class="hrN" />
+            <img src="img/login04.webp" alt="" />
+          </div>
+          <div id="member01" class="inlineContent">
+            <img src="img/member01.webp" alt="" />
+            <hr class="hrN" />
+            <img src="img/member02.webp" alt="" />
+            <!-- <img src="img/member03.webp" alt=""> -->
+          </div>
+          <div id="login05" class="inlineContent">
+            <img src="img/login05.webp" alt="" />
+          </div>
+          <div id="paint01" class="inlineContent">
+            <img src="img/paint01.webp" alt="" />
+          </div>
+          <div id="paint02" class="inlineContent">
+            <img src="img/paint02.webp" alt="" />
+          </div>
+          <div id="paint03" class="inlineContent">
+            <img src="img/paint03.webp" alt="" />
+          </div>
+          <div id="banner01" class="inlineContent">
+            <img src="img/banner01.webp" alt="" />
+          </div>
+          <div id="banner02" class="inlineContent">
+            <img src="img/banner02.webp" alt="" />
+          </div>
+          <div id="banner03" class="inlineContent">
+            <img src="img/banner03.webp" alt="" />
+          </div>
+          <div id="banner04" class="inlineContent">
+            <img src="img/banner04.webp" alt="" />
+          </div>
+          <div id="banner05" class="inlineContent">
+            <img src="img/banner05.webp" alt="" />
+          </div>
+          <div id="counter01" class="inlineContent">
+            <ul>
+              <li>Figma繪製線框稿及視覺稿。</li>
+              <li>確認視覺後，切版完成並交付後端工程師。</li>
+            </ul>
+            <img src="img/counter01-th.webp" alt="" />
+          </div>
+          <div id="counter03" class="inlineContent">
+            <img src="img/counter03.webp" alt="" />
+            <hr class="hrN" />
+            <img src="img/counter04.webp" alt="" />
+          </div>
+          <div id="book01" class="inlineContent">
+            <img src="img/book01.webp" alt="" />
+          </div>
         </div>
-        <div id="footer">
+        <div
+          id="aboutTabContent"
+          class="container tabContent"
+          style="display: none"
+        >
+          <div class="about">
+            <div class="col-12 col-md-5 mr-md-auto">
+              <div class="aboutImg">
+                <img src="./img/portfolioimg.webp" alt="" />
+              </div>
+              <div class="d-flex mt-3">
+                <div class="aboutTitle col px-0">
+                  <label>NAME</label>
+                  <p>Hsiang Chun, Chen</p>
+                </div>
 
+                <div class="aboutTitle col px-0">
+                  <label>EMAIL</label>
+                  <p>so8151@gmail.com</p>
+                </div>
+              </div>
+
+              <label>SKILL</label>
+              <div class="d-flex">
+                <div class="aboutTitle col px-0">
+                  <ul>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>Indesign</li>
+                    <li>Xd</li>
+                    <li>Figma</li>
+                  </ul>
+                </div>
+                <div class="aboutTitle col px-0">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Mac OS</li>
+                    <li>Window</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="aboutTitle">
+                <label>Education</label>
+                <p class="school">
+                  德明財經科技大學(進修部) 多媒體設計系｜2010/9~2014/6
+                </p>
+              </div>
+
+              <div class="aboutTitle">
+                <label>Qualifications</label>
+                <div class="quas">
+                  <p class="jobTitle">TKBGO 網頁設計｜2020/4~2022/6</p>
+                  <!-- 工作內容： -->
+                  <ol>
+                    <li>官網子網頁之UI設計、切版</li>
+                    <li>活動banner及GDN等素材設計</li>
+                    <li>平面印刷教材封面/DM設計</li>
+                    <li>維護更新網頁</li>
+                    <li>官網子品牌之插畫設計</li>
+                  </ol>
+                </div>
+                <div class="quas">
+                  <p class="jobTitle">TRACEEZ 視覺設計｜2019/6~2020/2</p>
+                  <!-- 工作內容： -->
+                  <ol>
+                    <li>展覽活動背景設計</li>
+                    <li>官網及臉書行銷橫幅設計</li>
+                    <li>產品說明頁圖片設計</li>
+                    <li>參與App UI更新及設計</li>
+                    <li>官網wordpress編排</li>
+                    <li>系統後台UI設計</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="aboutTitle">
+                <label>Autobiography</label>
+              </div>
+              <div class="aboutDetail">
+                <p>
+                  我出生於1992年，畢業於德明財經科技大學-多媒體設計系，因家中經濟關係，父母期許我們能獨立自主，高職便開始就讀夜校以半工半讀的方式完成學業；個性開朗，自認工作適應能力快速、喜愛瀏覽新的資訊、自我進修，平時工作態度積極、學習快速，有兩年的網頁設計經歷以及五年的電子商務廣告設計經歷！
+                </p>
+
+                <p>
+                  由於自小對藝術設計有興趣，雖然高職時沒有就讀設計相關科系，有時間便會自學設計相關軟體，現階段也是不斷精進自己的設計能力及軟體操作、自學或是觀看線上課程持續進修，目前持續學習的主要課程為JavaScript。
+                </p>
+
+                <p>
+                  前一份工作就職於線上課程平台，擔任維護線上課程網頁及設計，負責的項目有官網子網頁的UI設計及切版、課程教材封面設計、實體宣傳DM設計、線上banner及GDN設計等，有設計切版過子網頁的優惠頁面、會員專區、線上櫃檯小工具，UI設計有使用Adobe
+                  XD、Figma，平面設計會用到Photoshop修圖、Illustrator繪圖進行主視覺設計及插畫設計、Indesign排版頁碼較少的手冊、網頁切版則是習慣使用VS
+                  Code進行，也有使用SourTree更新GIT的經驗。
+                </p>
+
+                <p>
+                  曾任職於電子業擔任視覺設計，負責公司參展之海報背景設計、官網商品詳細圖設計及Facebook行銷等素材的拍攝及製作；有簡易使用wordpress編排官網之經驗，也因公司有製作app及系統前後台的關係，有參與設計網頁系統後台編寫，以及app更新繪製UI介面設計。
+                </p>
+
+                <p>
+                  過往曾於網路女裝/女包品牌擔任美術編輯，製作新品及行銷Banner、廣告素材、編輯HTML更新商城首頁及發送EDM的部分，工作時能準確的達到主管希望的風格及符合流行女裝更新快速的頻率；也有參與協助棚拍的會議及現場model情境照協助拍攝，從中也學到了很多廣告素材、棚拍、型錄之經驗。
+                </p>
+
+                <p>期許自己能在這個資訊進步的世界，精進自身能力並有所突破！</p>
+
+                <p>
+                  其他過往作品：<a
+                    href="https://so8151.wixsite.com/website"
+                    target="_blank"
+                    >https://so8151.wixsite.com/website</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <div id="footer"></div>
     </div>
-
 
     <!-- lightbox、用搜尋寫篩選、圖片調整mockup、圖片大小、比例 -->
 
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <!-- swiper -->
@@ -253,11 +282,14 @@
     <!-- colorbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
     <!-- bs -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- Lazy Load -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-</body>
+  </body>
 </html>

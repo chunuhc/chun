@@ -276,33 +276,36 @@ ul.navBar {
         font-weight: 600;
         padding: 4px 16px;
         margin: 4px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
         &:hover {
             background-position: 100%;
         }
         &:focus {
             outline: none;
         }
+        &:focus-visible {
+            outline: none;
+        }
         &.active {
             background-color: #c7aa7c;
             border: 2px solid #c3a370;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
         }
     }
 }
 
 .blockList {
 
-    // 欄距寬
-    // column-gap: 1em;
+    /* 欄距寬 */
+    /* column-gap: 1em; */
 
-    // 二擇一寬度or欄數
+    /* 二擇一寬度or欄數 */
     column-width: 240px;
-    // column-count: 5;
+    /* column-count: 5; */
 
-    // 換欄設定：auto/avoid
-    // column-break-inside: auto;
+    /* 換欄設定：auto/avoid */
+    /* column-break-inside: auto; */
 
     transition: all 0.5s linear;
     > a {

@@ -55,6 +55,30 @@ $(document).ready(function () {
     UI設計切版: [
       {
         hashtag: ["UI設計", "切版"],
+        title: "電商活動頁",
+        href: "https://shopping.gamania.com/act/2025promise/",
+        classN: "",
+        target: "_blank",
+        src: "img/2025promise.png",
+      },
+      {
+        hashtag: ["切版", "AI輔助開發"],
+        title: "電商活動頁",
+        href: "https://shopping.gamania.com/act/bossdog999/",
+        classN: "",
+        target: "_blank",
+        src: "img/bossdog999.jpg",
+      },
+      {
+        hashtag: ["切版", "AI輔助開發"],
+        title: "電商活動頁",
+        href: "https://shopping.gamania.com/act/mizuki-luminous/",
+        classN: "",
+        target: "_blank",
+        src: "img/mizuki-luminous.png",
+      },
+      {
+        hashtag: ["UI設計", "切版"],
         title: "線上櫃台功能設計切版",
         href: "#counter01",
         classN: "inline",

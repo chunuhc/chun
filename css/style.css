@@ -6835,6 +6835,12 @@ body {
 
 body {
   background-color: rgb(223, 218, 211);
+  /* #cboxClose {
+    background: unset;
+    ::before {
+      content: "x";
+    }
+  } */
 }
 
 #header {
@@ -7179,6 +7185,10 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 .inlineContent img + img {
   max-width: calc(75% - 2px);
   flex-shrink: 0;
+}
+.inlineContent.ig img:has(+ img),
+.inlineContent.ig img + img {
+  max-width: calc(50% - 4px);
 }
 
 .about {

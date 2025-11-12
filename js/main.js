@@ -259,6 +259,14 @@ $(document).ready(function () {
     Banner設計: [
       {
         hashtag: ["Banner設計"],
+        title: "Instagram貼文設計｜筋桑",
+        href: "#ig04",
+        classN: "inline cboxElement",
+        target: "",
+        src: "img/ig-1080x1350-4-1.webp",
+      },
+      {
+        hashtag: ["Banner設計"],
         title: "記帳士優惠Banner｜TKBGO",
         href: "#banner01",
         classN: "inline cboxElement",
@@ -312,15 +320,31 @@ $(document).ready(function () {
       {
         hashtag: ["Logo設計"],
         title: "VICVIN Logo",
-        href: "img/logo04pdf.pdf",
-        classN: "",
+        href: "#vicvin",
+        classN: "inline cboxElement",
         target: "_blank",
         src: "img/logo04-th.webp",
       },
     ],
     插畫設計: [
       {
-        hashtag: ["插畫設計"],
+        hashtag: ["插畫設計", "MediBang"],
+        title: "博美犬電繪練習",
+        href: "#paint02",
+        classN: "inline cboxElement",
+        target: "",
+        src: "img/paint02.webp",
+      },
+      {
+        hashtag: ["插畫設計", "Illustrator"],
+        title: "貓咪電繪練習",
+        href: "#paint04",
+        classN: "inline cboxElement",
+        target: "",
+        src: "img/paint04.webp",
+      },
+      {
+        hashtag: ["插畫設計", "Illustrator"],
         title: "TKB日文柴犬｜TKBGO",
         href: "#paint01",
         classN: "inline cboxElement",
@@ -328,16 +352,8 @@ $(document).ready(function () {
         src: "img/paint01.webp",
       },
       {
-        hashtag: ["插畫設計", "MediBang"],
-        title: "博美犬插畫練習",
-        href: "#paint02",
-        classN: "inline cboxElement",
-        target: "",
-        src: "img/paint02.webp",
-      },
-      {
-        hashtag: ["插畫設計"],
-        title: "米克斯插畫練習",
+        hashtag: ["插畫設計", "Illustrator"],
+        title: "米克斯電繪練習",
         href: "#paint03",
         classN: "inline cboxElement",
         target: "",

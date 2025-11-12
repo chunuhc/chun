@@ -55,27 +55,27 @@ $(document).ready(function () {
     UI設計切版: [
       {
         hashtag: ["UI設計", "切版"],
-        title: "Promise 2周年紀念 │ 購物橘子 × hololive",
+        title: "Promise 2周年｜購物橘子",
         href: "https://shopping.gamania.com/act/2025promise/",
         classN: "",
         target: "_blank",
-        src: "img/2025promise.png",
+        src: "img/2025promise.webp",
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "人生一翻賞 狗老大與獵狗跟你一起翻轉人生！｜購物橘子",
+        title: "人生一翻賞｜購物橘子",
         href: "https://shopping.gamania.com/act/bossdog999/",
         classN: "",
         target: "_blank",
-        src: "img/bossdog999.jpg",
+        src: "img/bossdog999.webp",
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "浠Mizuki 子午計畫 × 購物橘子",
+        title: "浠Mizuki｜購物橘子",
         href: "https://shopping.gamania.com/act/mizuki-luminous/",
         classN: "",
         target: "_blank",
-        src: "img/mizuki-luminous.png",
+        src: "img/mizuki-luminous.webp",
       },
       {
         hashtag: ["切版", "AI輔助開發"],
@@ -83,7 +83,39 @@ $(document).ready(function () {
         href: "#playground",
         classN: "inline",
         target: "",
-        src: "img/playground-cover.jpg",
+        src: "img/playground-cover.webp",
+      },
+      {
+        hashtag: ["切版", "AI輔助開發"],
+        title: "購物獵人｜購物橘子",
+        href: "#acgworld",
+        classN: "inline",
+        target: "",
+        src: "img/acgworld-cover.webp",
+      },
+      {
+        hashtag: ["切版", "AI輔助開發"],
+        title: "揪麗敗物語｜有閑購物",
+        href: "#sale99",
+        classN: "inline",
+        target: "",
+        src: "img/99sale-cover.webp",
+      },
+      {
+        hashtag: ["切版", "AI輔助開發"],
+        title: "黑5購物節｜有閑購物",
+        href: "#double11-2024",
+        classN: "inline",
+        target: "",
+        src: "img/2024double11-cover.webp",
+      },
+      {
+        hashtag: ["切版", "AI輔助開發"],
+        title: "1212購物狂｜有閑購物",
+        href: "#double12-2024",
+        classN: "inline",
+        target: "",
+        src: "img/2024double12-cover.webp",
       },
       {
         hashtag: ["UI設計", "切版"],
@@ -465,7 +497,7 @@ $(document).ready(function () {
 
   function loadMore(count) {
     // 顯示前六個
-    $(".blockList a").slice(0, 12).css("display", "block");
+    $(".blockList a").slice(0, 16).css("display", "block");
 
     // 按下更多再載入四個
     $("#moreBtn").click(function () {

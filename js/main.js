@@ -71,6 +71,14 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
+        title: "動漫鬼月特輯｜購物橘子",
+        href: "https://shopping.gamania.com/act/foodyokaianime/",
+        classN: "",
+        target: "_blank",
+        src: "img/foodyokai.webp",
+      },
+      {
+        hashtag: ["切版", "AI輔助開發"],
         title: "浠Mizuki｜購物橘子",
         href: "https://shopping.gamania.com/act/mizuki-luminous/",
         classN: "",

@@ -55,7 +55,7 @@ $(document).ready(function () {
     UI設計切版: [
       {
         hashtag: ["UI設計", "切版"],
-        title: "Promise 2周年｜購物橘子",
+        title: `視覺延伸 × UI Layout<br>× 前端切版`,
         href: "https://shopping.gamania.com/act/2025promise/",
         classN: "",
         target: "_blank",
@@ -63,7 +63,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "人生一翻賞｜購物橘子",
+        title: `視覺動態實作<br>× AI輔助程式開發`,
         href: "https://shopping.gamania.com/act/bossdog999/",
         classN: "",
         target: "_blank",
@@ -71,7 +71,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "動漫鬼月特輯｜購物橘子",
+        title: `視覺動態實作<br>× 前端切版`,
         href: "https://shopping.gamania.com/act/foodyokaianime/",
         classN: "",
         target: "_blank",
@@ -79,7 +79,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "浠Mizuki｜購物橘子",
+        title: `視覺動態實作<br>× AI輔助程式開發`,
         href: "https://shopping.gamania.com/act/mizuki-luminous/",
         classN: "",
         target: "_blank",
@@ -87,7 +87,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "次元遊樂場｜購物橘子",
+        title: `視覺動態實作<br>× 前端切版`,
         href: "#playground",
         classN: "inline",
         target: "",
@@ -95,7 +95,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "購物獵人｜購物橘子",
+        title: `視覺動態實作<br>× 前端切版`,
         href: "#acgworld",
         classN: "inline",
         target: "",
@@ -103,7 +103,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "揪麗敗物語｜有閑購物",
+        title: `HTML/CSS 切版實作`,
         href: "#sale99",
         classN: "inline",
         target: "",
@@ -111,7 +111,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "黑5購物節｜有閑購物",
+        title: `HTML/CSS 切版實作`,
         href: "#double11-2024",
         classN: "inline",
         target: "",
@@ -119,15 +119,16 @@ $(document).ready(function () {
       },
       {
         hashtag: ["切版", "AI輔助開發"],
-        title: "1212購物狂｜有閑購物",
+        title: `HTML/CSS 切版實作`,
         href: "#double12-2024",
         classN: "inline",
         target: "",
         src: "img/2024double12-cover.webp",
       },
+      // tkb
       {
         hashtag: ["UI設計", "切版"],
-        title: "線上櫃台功能設計切版",
+        title: `線上櫃台功能設計<br>× 前端切版`,
         href: "#counter01",
         classN: "inline",
         target: "",
@@ -143,7 +144,7 @@ $(document).ready(function () {
       // },
       {
         hashtag: ["UI設計", "切版"],
-        title: "高中段考守護神｜TKBGO",
+        title: `UI設計<br>× 切版實作`,
         href: "https://www.tkbgo.com.tw/go_edm/edm665/index.jsp",
         classN: "",
         target: "_blank",
@@ -151,7 +152,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計", "切版"],
-        title: "外交官特考｜TKBGO",
+        title: `UI設計<br>× 切版實作`,
         href: "https://www.tkbgo.com.tw/go_edm/edm215/index.jsp",
         classN: "",
         target: "_blank",
@@ -159,7 +160,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計", "切版"],
-        title: "完美書面 上榜頂大｜TKBGO",
+        title: `UI設計<br>× 切版實作`,
         href: "https://www.tkbgo.com.tw/go_edm/edm220/index.jsp",
         classN: "",
         target: "_blank",
@@ -167,7 +168,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計", "切版"],
-        title: "百鍊之綱 鐵定上榜｜TKBGO",
+        title: `UI設計<br>× 切版實作`,
         href: "https://www.tkbgo.com.tw/go_edm/edm178/index.jsp",
         classN: "",
         target: "_blank",
@@ -175,7 +176,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計"],
-        title: "放洋留學夢｜TKBGO",
+        title: `UI設計`,
         href: "#edm06",
         classN: "inline",
         target: "",
@@ -183,7 +184,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計", "切版"],
-        title: "超實用19堂商用日文課｜MIT100",
+        title: `UI設計<br>× 切版實作`,
         href: "https://www.tkbgo.com.tw/go_edm/edm615/index.jsp",
         classN: "",
         target: "_blank",
@@ -191,7 +192,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計", "切版"],
-        title: "銀行短衝｜TKBGO",
+        title: `UI設計<br>× 切版實作`,
         href: "https://www.tkbgo.com.tw/go_edm/edm599/index.jsp",
         classN: "",
         target: "_blank",
@@ -199,7 +200,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計"],
-        title: "國營聯招 隊長來了｜TKBGO",
+        title: `UI設計`,
         href: "#edm09",
         classN: "inline",
         target: "",
@@ -207,7 +208,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計"],
-        title: "學習歷程檔案詳細頁設計",
+        title: `UI設計`,
         href: "#edm04",
         classN: "inline cboxElement",
         target: "",
@@ -215,7 +216,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計", "切版"],
-        title: "會員專區設計切版",
+        title: `UI設計<br>× 切版實作`,
         href: "#member01",
         classN: "inline cboxElement",
         target: "",
@@ -223,7 +224,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計", "切版"],
-        title: "登入註冊跳窗設計切版",
+        title: `UI設計<br>× 切版實作`,
         href: "#login01",
         classN: "inline cboxElement",
         target: "",
@@ -231,7 +232,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["UI設計"],
-        title: "ICAR登入設計｜TRACEEZ",
+        title: `UI設計`,
         href: "#login05",
         classN: "inline cboxElement",
         target: "",
@@ -241,7 +242,7 @@ $(document).ready(function () {
     文宣設計: [
       {
         hashtag: ["文宣設計"],
-        title: "記帳士手冊封面｜TKBGO",
+        title: `手冊封面設計`,
         href: "#dm03",
         classN: "inline cboxElement",
         target: "",
@@ -249,7 +250,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["文宣設計"],
-        title: "文化行政傳單DM｜TKBGO",
+        title: `傳單DM設計`,
         href: "#dm01",
         classN: "inline cboxElement",
         target: "",
@@ -257,7 +258,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["文宣設計"],
-        title: "記帳士教材封面｜TKBGO",
+        title: `教材封面設計`,
         href: "#book01",
         classN: "inline cboxElement",
         target: "",
@@ -267,7 +268,24 @@ $(document).ready(function () {
     Banner設計: [
       {
         hashtag: ["Banner設計"],
-        title: "Instagram貼文設計｜筋桑",
+        title: `Banner設計`,
+        href: "#banner06",
+        classN: "inline cboxElement",
+        target: "",
+        src: "img/banner06.webp",
+      },
+      {
+        hashtag: ["Banner設計"],
+        title: `Banner設計`,
+        href: "#banner06",
+        classN: "inline cboxElement",
+        target: "",
+        src: "img/banner07.webp",
+      },
+      // tkb
+      {
+        hashtag: ["Banner設計"],
+        title: `Instagram貼文設計`,
         href: "#ig04",
         classN: "inline cboxElement",
         target: "",
@@ -275,7 +293,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["Banner設計"],
-        title: "記帳士優惠Banner｜TKBGO",
+        title: `Banner設計`,
         href: "#banner01",
         classN: "inline cboxElement",
         target: "",
@@ -283,7 +301,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["Banner設計"],
-        title: "銀行招考直播Banner｜TKBGO",
+        title: `Banner設計`,
         href: "#banner02",
         classN: "inline cboxElement",
         target: "",
@@ -291,7 +309,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["Banner設計", "插畫設計"],
-        title: "聯名商品Facebook貼文｜ONE+",
+        title: `Banner設計<br>× 插畫設計`,
         href: "#banner05",
         classN: "inline cboxElement",
         target: "",
@@ -301,7 +319,7 @@ $(document).ready(function () {
     圖說設計: [
       {
         hashtag: ["圖說設計"],
-        title: "高中升學路徑說明圖｜TKBGO",
+        title: `說明圖設計`,
         href: "#banner03",
         classN: "inline cboxElement",
         target: "",
@@ -309,7 +327,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["圖說設計"],
-        title: "前端必修課程封面圖｜MIT100",
+        title: `課程封面圖設計`,
         href: "#banner04",
         classN: "inline cboxElement",
         target: "",
@@ -319,7 +337,7 @@ $(document).ready(function () {
     Logo設計: [
       {
         hashtag: ["Logo設計"],
-        title: "DoWell Logo",
+        title: `Logo設計製作`,
         href: "#logo03",
         classN: "inline cboxElement",
         target: "",
@@ -327,7 +345,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["Logo設計"],
-        title: "VICVIN Logo",
+        title: `Logo設計<br>× 延伸應用`,
         href: "#vicvin",
         classN: "inline cboxElement",
         target: "_blank",
@@ -337,7 +355,7 @@ $(document).ready(function () {
     插畫設計: [
       {
         hashtag: ["插畫設計", "MediBang"],
-        title: "博美犬電繪練習",
+        title: `電繪練習`,
         href: "#paint02",
         classN: "inline cboxElement",
         target: "",
@@ -345,7 +363,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["插畫設計", "Illustrator"],
-        title: "貓咪電繪練習",
+        title: `電繪練習`,
         href: "#paint04",
         classN: "inline cboxElement",
         target: "",
@@ -353,7 +371,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["插畫設計", "Illustrator"],
-        title: "TKB日文柴犬｜TKBGO",
+        title: `吉祥物插畫設計`,
         href: "#paint01",
         classN: "inline cboxElement",
         target: "",
@@ -361,7 +379,7 @@ $(document).ready(function () {
       },
       {
         hashtag: ["插畫設計", "Illustrator"],
-        title: "米克斯電繪練習",
+        title: `電繪練習`,
         href: "#paint03",
         classN: "inline cboxElement",
         target: "",
@@ -520,19 +538,19 @@ $(document).ready(function () {
   // var count = $('.blockList a').length;
 
   function loadMore(count) {
-    // 顯示前六個
-    $(".blockList a").slice(0, 16).css("display", "block");
+    // 顯示前17個
+    $(".blockList a").slice(0, 17).css("display", "block");
 
-    // 按下更多再載入四個
+    // 按下更多再載入6個
     $("#moreBtn").click(function () {
-      $(".blockList a:hidden").slice(0, 4).css("display", "block");
+      $(".blockList a:hidden").slice(0, 6).css("display", "block");
       if ($(".blockList a:hidden").length === 0) {
         $("#moreBtn").text("No More").addClass("null");
       }
     });
 
     // 判斷loadmore按鈕
-    if (count <= 12) return $("#moreBtn").text("No More").addClass("null");
+    if (count <= 17) return $("#moreBtn").text("No More").addClass("null");
     $("#moreBtn").text("Load More").removeClass("null");
   }
 

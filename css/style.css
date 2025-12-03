@@ -7124,15 +7124,18 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
 }
 .blockList > a .hover .hashtag {
   width: 16em;
+  display: none;
 }
 .blockList > a .hover .content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 .blockList > a .hover .title {
   font-size: 18px;
+  margin-inline: 8%;
 }
 .blockList > a:hover .hover {
   opacity: 1;

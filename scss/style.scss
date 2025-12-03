@@ -342,15 +342,18 @@ ul.navBar {
       .hashtag {
         // white-space: nowrap;
         width: 16em;
+        display: none;
       }
       .content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
       }
       .title {
         font-size: 18px;
+        margin-inline: 8%;
       }
     }
     &:hover .hover {

@@ -41,6 +41,14 @@
 @import "utilities";
 @import "print";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -281,9 +289,7 @@ ul.navBar {
     font-weight: 600;
     padding: 4px 16px;
     margin: 4px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    border: 2px solid #d6ba8d;
     &:hover {
       background-position: 100%;
     }

@@ -6828,6 +6828,14 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important;
   }
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -7065,9 +7073,7 @@ ul.navBar li a.active::after, ul.navBar li a:hover::after {
   font-weight: 600;
   padding: 4px 16px;
   margin: 4px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  border: 2px solid #d6ba8d;
 }
 .sBtn button:hover {
   background-position: 100%;

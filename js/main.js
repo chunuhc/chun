@@ -1,8 +1,8 @@
 $(document).ready(function () {
   ////// HEADER&FOOTER LOAD begin
 
-  var headerDom = document.getElementById("header");
-  var footerDom = document.getElementById("footer");
+  const headerDom = document.querySelector("#header");
+  const footerDom = document.querySelector("#footer");
 
   function headerData() {
     return axios.get("./header.html");
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
   ////// SEARCH begin--
 
-  var pContent = {
+  var portfolioData = {
     UI設計切版: [
       {
         hashtag: ["UI設計", "切版"],
@@ -388,15 +388,19 @@ $(document).ready(function () {
     ],
   };
 
-  var searchBar = $(".searchBar:text");
-  var sBlock = $(".blockList");
-  var sTag = $("#sBtn button");
-  var sArr = [];
-  var html = "";
+  const searchBar = $(".searchBar:text");
+  const portfolioContainer = $(".blockList");
+  const categoryButtons = $("#sBtn button");
+  let filteredProjects = [];
+  let projectCardsHTML = "";
 
   // for迴圈不能使用匿名函示
-  for (var s = 0; s < sTag.length; s++) {
-    sTag[s].addEventListener("click", function () {
+  for (
+    let buttonIndex = 0;
+    buttonIndex < categoryButtons.length;
+    buttonIndex++
+  ) {
+    categoryButtons[buttonIndex].addEventListener("click", function () {
       $(this).addClass("active").siblings().removeClass("active");
 
       if (this.id !== "allBtn") return tagSearch(this.innerText);
@@ -406,30 +410,38 @@ $(document).ready(function () {
 
   // 全部顯示
   function allBlock() {
-    html = "";
-    sBlock.html(html);
+    projectCardsHTML = "";
+    portfolioContainer.html(projectCardsHTML);
 
     // 存入數組陣列
-    sArr = Object.entries(pContent);
+    filteredProjects = Object.entries(portfolioData);
 
-    var str = "";
-    for (var i = 0; i < sArr.length; i++) {
-      for (var j = 0; j < sArr[i][1].length; j++) {
-        str = sArr[i][1][j];
-        html += `
-        <a class="${str.classN}" href="${str.href}" target="${str.target}">
+    let currentProject = "";
+    for (
+      let categoryIndex = 0;
+      categoryIndex < filteredProjects.length;
+      categoryIndex++
+    ) {
+      for (
+        let projectIndex = 0;
+        projectIndex < filteredProjects[categoryIndex][1].length;
+        projectIndex++
+      ) {
+        currentProject = filteredProjects[categoryIndex][1][projectIndex];
+        projectCardsHTML += `
+        <a class="${currentProject.classN}" href="${currentProject.href}" target="${currentProject.target}">
           <div class="hover">
             <div class="content">
-              <div class="hashtag">${str.hashtag}</div>
-              <div class="title">${str.title}</div>
+              <div class="hashtag">${currentProject.hashtag}</div>
+              <div class="title">${currentProject.title}</div>
             </div>
           </div>
-          <img class="lazyload" src="img/lazy.svg" data-src="${str.src}" alt="${str.title}">
+          <img class="lazyload" src="img/lazy.svg" data-src="${currentProject.src}" alt="${currentProject.title}">
         </a>
         `;
       }
     }
-    sBlock.html(html);
+    portfolioContainer.html(projectCardsHTML);
     loadMore($(".blockList a").length);
     // console.log($('.blockList a').length);
 
@@ -452,30 +464,34 @@ $(document).ready(function () {
   allBlock();
 
   // 按下標籤搜尋顯示
-  function tagSearch(sText) {
-    html = "";
-    sBlock.html(html);
-    sArr = pContent[sText];
+  function tagSearch(categoryName) {
+    projectCardsHTML = "";
+    portfolioContainer.html(projectCardsHTML);
+    filteredProjects = portfolioData[categoryName];
 
-    for (var i = 0; i < sArr.length; i++) {
-      html += `
-      <a class="${sArr[i].classN}" href="${sArr[i].href}" target="${sArr[i].target}">
+    for (
+      let categoryIndex = 0;
+      categoryIndex < filteredProjects.length;
+      categoryIndex++
+    ) {
+      projectCardsHTML += `
+      <a class="${filteredProjects[categoryIndex].classN}" href="${filteredProjects[categoryIndex].href}" target="${filteredProjects[categoryIndex].target}">
         <div class="hover">
           <div class="content">
-            <div class="hashtag">${sArr[i].hashtag}</div>
-            <div class="title">${sArr[i].title}</div>
+            <div class="hashtag">${filteredProjects[categoryIndex].hashtag}</div>
+            <div class="title">${filteredProjects[categoryIndex].title}</div>
           </div>
         </div>
-        <img class="lazyload" src="img/lazy.svg" data-src="${sArr[i].src}" alt="${sArr[i].title}">
+        <img class="lazyload" src="img/lazy.svg" data-src="${filteredProjects[categoryIndex].src}" alt="${filteredProjects[categoryIndex].title}">
       </a>
       `;
       // data-aos="fade-right"
     }
-    // console.log('1 '+sBlock);
-    sBlock.html(html);
-    // console.log(sBlock);
+    // console.log('1 '+portfolioContainer);
+    portfolioContainer.html(projectCardsHTML);
+    // console.log(portfolioContainer);
 
-    // loadMore(sArr.length);
+    // loadMore(filteredProjects.length);
     loadMore($(".blockList a").length);
 
     $(".inline").colorbox({
@@ -488,21 +504,18 @@ $(document).ready(function () {
     });
   }
 
-  var keyword = "";
-  var sHtml = "";
-
   // function DomRender() {
   //   html = '';
-  //   sBlock.innerHTML = '';
-  //   for(i = 0; i < pContent.length; i++) {
-  //     html += '<a class="'+pContent[i].class+'" href="'+pContent[i].href+'">'
+  //   portfolioContainer.innerHTML = '';
+  //   for(let i = 0; i < portfolioData.length; i++) {
+  //     html += '<a class="'+portfolioData[i].class+'" href="'+portfolioData[i].href+'">'
   //     html += '<div class="hover"><div class="content">'
-  //     html += '<div class="hashtag">'+pContent[i].hashtag+'</div>'
-  //     html += '<div class="title">'+pContent[i].title+'</div></div></div>'
-  //     html += '<img src="'+pContent[i].src+'" alt="'+pContent[i].title+'"></a>'
+  //     html += '<div class="hashtag">'+portfolioData[i].hashtag+'</div>'
+  //     html += '<div class="title">'+portfolioData[i].title+'</div></div></div>'
+  //     html += '<img src="'+portfolioData[i].src+'" alt="'+portfolioData[i].title+'"></a>'
   //   }
 
-  //   sBlock.innerHTML = html;
+  //   portfolioContainer.innerHTML = html;
   // }
   // DomRender();
 
@@ -537,7 +550,7 @@ $(document).ready(function () {
 
   // var count = $('.blockList a').length;
 
-  function loadMore(count) {
+  function loadMore(totalProjectsCount) {
     // 顯示前17個
     $(".blockList a").slice(0, 17).css("display", "block");
 
@@ -550,7 +563,8 @@ $(document).ready(function () {
     });
 
     // 判斷loadmore按鈕
-    if (count <= 17) return $("#moreBtn").text("No More").addClass("null");
+    if (totalProjectsCount <= 17)
+      return $("#moreBtn").text("No More").addClass("null");
     $("#moreBtn").text("Load More").removeClass("null");
   }
 

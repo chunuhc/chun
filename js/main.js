@@ -54,6 +54,14 @@ $(document).ready(function () {
   var portfolioData = {
     UI設計切版: [
       {
+        hashtag: ["切版", "AI輔助開發"],
+        title: `HTML/CSS/JS 切版實作`,
+        href: "https://shopping.gamania.com/act/mall/",
+        classN: "",
+        target: "_blank",
+        src: "img/mall-cover.webp",
+      },
+      {
         hashtag: ["UI設計", "切版"],
         title: `視覺延伸 × UI Layout<br>× 前端切版`,
         href: "https://shopping.gamania.com/act/2025promise/",

@@ -153,9 +153,9 @@ $(document).ready(function () {
       {
         hashtag: ["UI設計", "切版"],
         title: `UI設計<br>× 切版實作`,
-        href: "https://www.tkbgo.com.tw/go_edm/edm665/index.jsp",
-        classN: "",
-        target: "_blank",
+        href: "#edm02",
+        classN: "inline",
+        target: "",
         src: "img/edm02-th.webp",
       },
       {

@@ -133,6 +133,15 @@ $(document).ready(function () {
         target: "",
         src: "img/2024double12-cover.webp",
       },
+      {
+        hashtag: ["UI設計", "切版"],
+        title: `視覺設計及延伸 × UI Layout<br>× 前端切版`,
+        title: `HTML/CSS 切版實作`,
+        href: "#2023otaku",
+        classN: "inline",
+        target: "",
+        src: "img/2023otaku-mb-th.webp",
+      },
       // tkb
       {
         hashtag: ["UI設計", "切版"],
